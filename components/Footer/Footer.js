@@ -17,11 +17,13 @@ const changeLanguage = (language, setLangauge) => {
 const Footer = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
+    const email = t("email");
+    const phone = t("phone");
     return (
         <FooterStyle backgroundColor={props.backgroundColor} >
             <div className="option">
-                <a href="mailto:elcorreoquequieres@correo.com"><Paragraph>{t("email")}</Paragraph></a>
-                <a href="tel:+34678567876"><Paragraph>{t("phone")}</Paragraph></a>
+                <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a>
+                <a href={`tel:${phone}`}><Paragraph>{t("phone")}</Paragraph></a>
                 <a href="/"><Paragraph>{t("termsConditions")}</Paragraph></a>
                 <a href="/"><Paragraph>{t("privacyPolicy")}</Paragraph></a>
             </div>
@@ -39,4 +41,4 @@ const Footer = props => {
     );
 };
 
-export default withTranslation("ContactNavFooter")(Footer);
+export default withTranslation("footer")(Footer);
