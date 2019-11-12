@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 
-const Fonth1 = styled.p`
-    font-family: "Presura";
+const paragraph = styled.p`
+    font-family: "Pressura";
     color: black;
-    font-size: 18px;
-    letter-spacing: 0.07rem;
-    line-height:1.4rem;
+    font-size: ${props => (props.size ? props.size : '18px')};
+    letter-spacing: ${props => (props.spacing ? props.spacing : '0.7px')};;
+    line-height:${props => (props.lineheight ? props.lineheight : '30px')};;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
+    
 
     @media only screen and (min-width:415px) and (max-width:768px){
 
@@ -23,4 +24,4 @@ const Fonth1 = styled.p`
     }
 `;
 
-export default Fonth1;
+export default paragraph;

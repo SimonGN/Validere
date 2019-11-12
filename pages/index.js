@@ -61,7 +61,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        
+        <Meta/>
         <Footer />
       </React.Fragment>
     );

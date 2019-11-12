@@ -12,19 +12,19 @@ const Meta = () => {
       </Head>
       <style jsx global>{`
         @font-face {
-          font-family: "Pressura;
+          font-family: "Pressura";
           src: url(/static/fonts/GT-Pressura-Pro-Mono-Regular.ttf) format("truetype");
           font-weight: normal;
           font-style: normal;
         }
         @font-face {
-          font-family: "Panama;
+          font-family: "Panama";
           src: url(/static/fonts/PanamaRegular.ttf) format("truetype");
           font-weight: normal;
           font-style: normal;
         }
 
-        body {
+        body, p {
           margin: 0;
           padding: 0;
           max-width: 100%;
