@@ -13,6 +13,9 @@ const ScrollStyle = styled.div`
     .box1, .box2, .box3, .box4, .box5{
         margin-bottom:4%;
     }
+    .pc{
+            display:none; 
+        }
 
 
     div.scroll {
@@ -33,6 +36,9 @@ const ScrollStyle = styled.div`
     @media only screen and (min-width:415px) and (max-width:768px){
         .box1, .box2, .box3{
             margin-bottom:2%;
+        }
+        .pc{
+            display:none; 
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){

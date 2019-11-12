@@ -13,7 +13,8 @@ const IntroStyle = styled.div`
         }
     }
     .element{
-        margin-top:10%;
+        margin-top: 2%;
+        margin-bottom: 10%;
     }
     .colum2{
         display:flex;

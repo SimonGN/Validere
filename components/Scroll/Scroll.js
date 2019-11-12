@@ -12,7 +12,7 @@ const Scroll = props => {
                 <div className=" scroll box3"></div>
                 <div className=" scroll box4"></div>
             </div>
-            <div className="PC">
+            <div className="pc">
                 <div className=" scroll box1"></div>
                 <div className=" scroll box2"></div>
                 <div className=" scroll box3"></div>
