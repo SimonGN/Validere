@@ -6,10 +6,21 @@ const Scroll = props => {
     return (
 
         <ScrollStyle>
-            <div className=" scroll box1"></div>
-            <div className=" scroll box2"></div>
-            <div className=" scroll box3"></div>
-            <div className=" scroll box4"></div>
+            <div className="movil">
+                <div className=" scroll box1"></div>
+                <div className=" scroll box2"></div>
+                <div className=" scroll box3"></div>
+                <div className=" scroll box4"></div>
+            </div>
+            <div className="PC">
+                <div className=" scroll box1"></div>
+                <div className=" scroll box2"></div>
+                <div className=" scroll box3"></div>
+                <div className=" scroll box4"></div>
+                <div className=" scroll box5"></div>
+                <div className=" scroll box6"></div>
+            </div>
+
         </ScrollStyle>
     )
 

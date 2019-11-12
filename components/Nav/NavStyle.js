@@ -5,11 +5,12 @@ const NavStyle = styled.div`
     a{
         text-decoration:none;
     }
-    padding-top:2%;
-    padding-bottom:2%;
+
     position:fixed;
     width:100%;
     div{
+        padding-top:2%;
+        padding-bottom:2%;
         width:90%;
         margin:0 auto;
         display:flex;
@@ -25,7 +26,9 @@ const NavStyle = styled.div`
     
     
     @media only screen and (min-width:415px) and (max-width:768px){
-        width:50%;
+        div{
+            width:50%;
+        }
         .logo{
             display:block;
             width:40%;
@@ -35,7 +38,9 @@ const NavStyle = styled.div`
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        width:50%;
+        div{
+            width:50%;
+        }
         .logo{
             display:block;
             width:35%;
@@ -45,9 +50,13 @@ const NavStyle = styled.div`
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        padding-top:1%;
-        padding-bottom:1%;
-        width:50%;
+        div{
+            width:50%;
+            padding-top:1%;
+            padding-bottom:1%;
+        }
+       
+        
         .logo{
             display:block;
             width:30%;
@@ -57,9 +66,12 @@ const NavStyle = styled.div`
         }
     }
     @media only screen and (min-width:1441px){
-        padding-top:1%;
-        padding-bottom:1%;
-        width:40%;
+        div{
+            width:40%;
+            padding-top:1%;
+            padding-bottom:1%;
+        }
+        
         .logo{
             display:block;
             width:30%;

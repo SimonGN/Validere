@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Intro from "../components/Intro/Intro";
-import Scroll from "../components/Scroll/Scroll";
+import ToDo from "../components/Todo/Todo";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -67,7 +67,7 @@ class Home extends React.Component {
         <Meta />
         <Nav />
         <Intro />
-        <Scroll/>
+        <ToDo />
         <Footer />
       </React.Fragment>
     );
