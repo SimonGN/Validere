@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 
 import Footer from "../components/Footer/Footer";
+import Nav from "../components/Nav/Nav";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,6 +63,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Meta/>
+        <Nav/>
         <Footer />
       </React.Fragment>
     );
