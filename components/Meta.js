@@ -24,7 +24,7 @@ const Meta = () => {
           font-style: normal;
         }
 
-        body, p {
+        body, p, h1 {
           margin: 0;
           padding: 0;
           max-width: 100%;

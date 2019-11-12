@@ -20,7 +20,7 @@ const Footer = props => {
     const email = t("email");
     const phone = t("phone");
     return (
-        <FooterStyle backgroundColor={props.backgroundColor} >
+        <FooterStyle >
             <div className="footer">
                 <div className="option">
                     <a href={`mailto:${email}`}><Paragraph size="13px" >{t("email")}</Paragraph></a>

@@ -18,12 +18,14 @@ const Nav = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
     return (
-        <NavStyle backgroundColor={props.backgroundColor} >
-            
+        <NavStyle >
+            <div>
+                <a href="/"><Paragraph size="13px" >{t("nav1")}</Paragraph></a>
+                <img className="simbolo" src="/static/svg/simboloValidere.svg" />
+                <img className="logo" src="/static/svg/logoValidere.svg" />
+                <a href="/"><Paragraph size="13px" >{t("nav2")}</Paragraph></a>
+            </div>
 
-            <a href="/"><Paragraph size="13px" >{t("Nav1")}</Paragraph></a>
-            <img className="logo" src="/static/svg/logoValidere.svg" />
-            <a href="/"><Paragraph size="13px" >{t("Nav2")}</Paragraph></a>
         </NavStyle>
     );
 };

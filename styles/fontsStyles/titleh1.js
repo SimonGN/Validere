@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const titleh1 = styled.h1`
     font-family: "Panama";
     color: black;
-    font-size: 50px;
-    letter-spacing: 0.07rem;
-    line-height:1.4rem;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height:45px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
     @media only screen and (min-width:415px) and (max-width:768px){

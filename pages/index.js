@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
+import Intro from "../components/Intro/Intro";
+import Scroll from "../components/Scroll/Scroll";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,8 +64,10 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Meta/>
-        <Nav/>
+        <Meta />
+        <Nav />
+        <Intro />
+        <Scroll/>
         <Footer />
       </React.Fragment>
     );
@@ -71,11 +75,11 @@ class Home extends React.Component {
 }
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["Home"]
+  namespacesRequired: ["home"]
 });
 
 Home.propTypes = {
   t: PropTypes.func.isRequired
 };
 
-export default withTranslation("Home")(Home);
+export default withTranslation("home")(Home);

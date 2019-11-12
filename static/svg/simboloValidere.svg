@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="230px" height="245px" viewBox="0 0 230 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>simboloValidere</title>
+    <desc>Design Simón G. Negrete by Tailor</desc>
+    <defs>
+        <path d="M206.306493,244.429187 C207.980749,245.777477 210.456427,244.587809 210.456427,242.422614 L210.472297,18.7333054 C210.472297,9.36665271 218.645208,4.81418983 230,4.81418983 L230,0 L0,0 L0,4.81418983 C11.3468571,4.81418983 19.527703,9.36665271 19.527703,18.7333054 L19.5435728,242.422614 C19.5435728,244.587809 22.0192507,245.777477 23.6935072,244.429187 L108.675913,175.920172 C112.37356,172.938071 117.62644,172.938071 121.324087,175.920172 L206.306493,244.429187 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Sobre-nosotras" transform="translate(-914.000000, -420.000000)">
+            <g id="Group-3" transform="translate(914.000000, 420.000000)">
+                <g id="Recurso-1@2x">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
