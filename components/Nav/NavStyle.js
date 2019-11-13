@@ -2,8 +2,18 @@ import styled from 'styled-components';
 
 
 const NavStyle = styled.div`
-    a{
+    p{
         text-decoration:none;
+        cursor:pointer;
+    }
+    img{
+        cursor:pointer; 
+    }
+
+    .aLogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     position:fixed;

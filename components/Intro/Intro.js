@@ -42,8 +42,8 @@ const Intro = props => {
                 </div>
 
                 <div className="button">
-                    <a href="/"><Paragraph >{t("enlace1")}</Paragraph></a>
-                    <img className="line" src="/static/svg/line.svg" />
+                    <Link href="/about"><Paragraph >{t("enlace1")}</Paragraph></Link>
+                    <Link href="/about"><img className="line" src="/static/svg/line.svg" /></Link>
                 </div>
 
             </div>

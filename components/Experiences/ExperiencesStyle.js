@@ -13,6 +13,9 @@ const ExperiencesStyle = styled.div`
         display:flex;
         margin-top:15%;
         margin-bottom: 20%;
+        p, img{
+            cursor: pointer;
+        }
         img{
                 margin-left:5%;
             }

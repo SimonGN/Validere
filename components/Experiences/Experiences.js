@@ -25,8 +25,8 @@ const Experiences = props => {
             <div className="column1">
                 <ParagraphTitle >{t("titleNosotros")}</ParagraphTitle>
                 <div className="button">
-                    <a href="/about"><Paragraph >{t("enlace2")}</Paragraph></a>
-                    <img className="line" src="/static/svg/line.svg" />
+                    <Link href="/about"><Paragraph >{t("enlace2")}</Paragraph></Link>
+                    <Link href="/about"><img className="line" src="/static/svg/line.svg" /></Link>
                 </div>
             </div>
             <div className="column2">

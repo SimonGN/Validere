@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 const IntroStyle = styled.div`
+
     a{
         text-decoration:none;
     }
@@ -29,6 +30,9 @@ const IntroStyle = styled.div`
         display:flex;
         margin-top:15%;
         margin-bottom: 20%;
+        p, img{
+            cursor: pointer;
+        }
     }
     .line{
         width:20%;
