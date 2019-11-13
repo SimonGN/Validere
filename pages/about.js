@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
+import Abouttext from "../components/About/About";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -63,7 +64,7 @@ class About extends React.Component {
       <React.Fragment>
         <Meta />
         <Nav />
-
+        <Abouttext />
         <Footer />
         
       </React.Fragment>
