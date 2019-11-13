@@ -55,7 +55,7 @@ const Abouttext = props => {
                 </div>
                 <div className="column2">
                     <div>
-                        <img className="simbolo" src="/static/svg/simboloValidere.svg" />
+                        <img className="simbolo" src="/static/svg/simboloColorValidere.svg" />
                     </div>
                 </div>
             </div>

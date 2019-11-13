@@ -5,6 +5,8 @@ const IntroStyle = styled.div`
     a{
         text-decoration:none;
     }
+    overflow: hidden;
+
     .colum1{
         width:100%;
         img{

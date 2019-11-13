@@ -59,6 +59,7 @@ const AboutStyle = styled.div`
     .image{
         width:100%;
         z-index:10;
+        padding-bottom: 10%;
         img{
             width:100%;
             object-fit:cover;
@@ -97,6 +98,9 @@ const AboutStyle = styled.div`
                 width:17%;
             }
         }
+        .image{
+            padding-bottom: 8%;
+        }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         .global{
@@ -131,6 +135,9 @@ const AboutStyle = styled.div`
         }
         .mision{
             order:2;
+        }
+        .image{
+            padding-bottom: 7%;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
@@ -167,6 +174,9 @@ const AboutStyle = styled.div`
         .mision{
             order:2;
         }
+        .image{
+            padding-bottom: 6%;
+        }
     }
     @media only screen and (min-width:1441px){
         .global{
@@ -201,6 +211,9 @@ const AboutStyle = styled.div`
         }
         .mision{
             order:2;
+        }
+        .image{
+            padding-bottom: 5%;
         }
     }
 
