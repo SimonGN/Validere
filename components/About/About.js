@@ -20,38 +20,48 @@ const changeLanguage = (language, setLangauge) => {
 const Abouttext = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
+    const email = t("email");
+    const tel = t("tel");
     return (
         <AboutStyle >
-            <div className="column1">
-            <div className="About">
-            <ParagraphTitle >{t("titleAbout")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionAbout1")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionAbout2")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionAbout3")}</ParagraphTitle>
-            </div>
-            <div className="Mision">
-            <ParagraphTitle >{t("titleMision")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionMision1")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionMision2")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionMision3")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionMision4")}</ParagraphTitle>
-            </div>
-            <div className="Contact">
-                <ParagraphTitle >{t("titleContact")}</ParagraphTitle>
-                <ParagraphTitle >{t("descriptionContact1")}</ParagraphTitle>
-                <ParagraphTitle >{t("emial")}</ParagraphTitle>
-                <ParagraphTitle >{t("tel")}</ParagraphTitle>
-                <div>
-                    <button></button>
+            <div className="global">
+                <div className="column1">
+                    <div className="about">
+                        <ParagraphTitle >{t("titleAbout")}</ParagraphTitle>
+                        <Paragraph >{t("descriptionAbout1")}</Paragraph>
+                        <Paragraph >{t("descriptionAbout2")}</Paragraph>
+                        <Paragraph >{t("descriptionAbout3")}</Paragraph>
+                    </div>
+                    <div className="mision">
+                        <ParagraphTitle >{t("titleMision")}</ParagraphTitle>
+                        <Paragraph >{t("descriptionMision1")}</Paragraph>
+                        <Paragraph >{t("descriptionMision2")}</Paragraph>
+                        <Paragraph >{t("descriptionMision3")}</Paragraph>
+                        <Paragraph >{t("descriptionMision4")}</Paragraph>
+                    </div>
+                    <div className="contact">
+                        <ParagraphTitle >{t("titleContact")}</ParagraphTitle>
+                        <Paragraph >{t("descriptionContact1")}</Paragraph>
+                        <div className="emailPhone">
+                            <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a>
+                            <a href={`tel:${tel}`}><Paragraph>{t("tel")}</Paragraph></a>
+                        </div>
+
+                        <div className="button">
+                            <button><h5>{t("button")}</h5></button>
+                        </div>
+                    </div>
+
                 </div>
-
+                <div className="column2">
+                    <div>
+                        <img className="simbolo" src="/static/svg/simboloValidere.svg" />
+                    </div>
+                </div>
             </div>
-        
+            <div className="image">
+                <img src="/static/img/imgAbout.jpg" />
             </div>
-            <div className="column2">
-
-            </div>
-
         </AboutStyle>
     );
 };

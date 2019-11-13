@@ -36,8 +36,8 @@ const Footer = props => {
             </div>
             <div className="copy">
                 <Paragraph size="10px" spacing="0,5px" lineheight="13px">
-                    Copyright © by Tailor hub S.L, 2019. All rights reserved. All materials
-                    on this website are intellectual property of Tailor hub S.L.
+                    Copyright © by ––––––––, 2019. All rights reserved. All materials
+                    on this website are intellectual property of ––––––––.
                 </Paragraph>
             </div>
 
