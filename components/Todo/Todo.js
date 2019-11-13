@@ -20,22 +20,27 @@ const Todo = props => {
     const [language, setLangauge] = useState(i18n.language)
     return (
         <TodoStyle >
-            <div className="queHacemos">
-                <Paragraph>{t("subTitulo1")}</Paragraph>
-                <ParagraphTitle>{t("description3")}</ParagraphTitle>
+            <div className="colum1">
+                <div className="queHacemos">
+                    <Paragraph>{t("subTitulo1")}</Paragraph>
+                    <ParagraphTitle>{t("description3")}</ParagraphTitle>
+                </div>
+                <div className="uni">
+                    <Titleh3>{t("subTitulo2")}</Titleh3>
+                    <Paragraph>{t("description4")}</Paragraph>
+                </div>
             </div>
-            <div className="uni">
-                <Titleh3>{t("subTitulo2")}</Titleh3>
-                <Paragraph>{t("description4")}</Paragraph>
+            <div className="colum2">
+                <div className="noUni">
+                    <Titleh3>{t("subTitulo3")}</Titleh3>
+                    <Paragraph>{t("description5")}</Paragraph>
+                </div>
+                <div className="consul">
+                    <Titleh3>{t("subTitulo4")}</Titleh3>
+                    <Paragraph>{t("description6")}</Paragraph>
+                </div>
             </div>
-            <div className="noUni">
-                <Titleh3>{t("subTitulo3")}</Titleh3>
-                <Paragraph>{t("description5")}</Paragraph>
-            </div>
-            <div className="consul">
-                <Titleh3>{t("subTitulo4")}</Titleh3>
-                <Paragraph>{t("description6")}</Paragraph>
-            </div>
+
 
         </TodoStyle>
     );
