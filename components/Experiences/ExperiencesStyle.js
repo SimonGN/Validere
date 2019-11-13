@@ -13,6 +13,9 @@ const ExperiencesStyle = styled.div`
         display:flex;
         margin-top:15%;
         margin-bottom: 20%;
+        img{
+                margin-left:5%;
+            }
     }
     .column2{
         width:100%;
@@ -40,7 +43,7 @@ const ExperiencesStyle = styled.div`
         }
     }
     .experiences1, .experiences2{
-        width:75%;
+        width:58%;
         margin:0 auto;
     }
     .experiences1{
@@ -97,7 +100,7 @@ const ExperiencesStyle = styled.div`
         display: flex;
 
         .column1{
-            width:30%;
+            width:33%;
             padding-top: 10%;
         }
 
@@ -113,7 +116,7 @@ const ExperiencesStyle = styled.div`
     @media only screen and (min-width:1441px){
         display: flex;
         .column1{
-            width:33%;
+            width:30%;
             padding-top: 10%;
         }
 

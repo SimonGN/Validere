@@ -20,10 +20,10 @@ const Nav = props => {
     return (
         <NavStyle >
             <div>
-                <a href="/"><Paragraph size="13px" >{t("nav1")}</Paragraph></a>
+                <a href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></a>
                 <img className="simbolo" src="/static/svg/simboloValidere.svg" />
                 <img className="logo" src="/static/svg/logoValidere.svg" />
-                <a href="/"><Paragraph size="13px" >{t("nav2")}</Paragraph></a>
+                <a href="/contact"><Paragraph size="13px" >{t("nav2")}</Paragraph></a>
             </div>
 
         </NavStyle>
