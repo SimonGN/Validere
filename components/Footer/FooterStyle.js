@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 const FooterStyle = styled.div`
+    padding-bottom:0.5%;
     a{
         text-decoration:none;
     }
@@ -40,6 +41,7 @@ const FooterStyle = styled.div`
     }
     
     @media only screen and (min-width:415px) and (max-width:768px){
+        padding-bottom:0.5%;
         .footer{
             flex-flow:row;
             padding-top: 5%;
@@ -55,6 +57,7 @@ const FooterStyle = styled.div`
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
+        padding-bottom:1%;
         .footer, .option{
             flex-flow:row;
         }       
@@ -72,7 +75,8 @@ const FooterStyle = styled.div`
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        width:80%;
+        width:85%;
+        padding-bottom:1%;
         .footer, .option{
             flex-flow:row;
         }       
@@ -90,7 +94,8 @@ const FooterStyle = styled.div`
         }
     }
     @media only screen and (min-width:1441px){
-        width:80%;
+        width:82%;
+        padding-bottom:1%;
         .footer, .option{
             flex-flow:row;
         }       

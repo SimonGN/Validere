@@ -86,12 +86,12 @@ const TodoStyle = styled.div`
         .queHacemos, .uni, .noUni, .consul{
             width:100%;
             p:first-child, h3{
-                margin: 0 12% 5% 12%;
-                padding: 12% 0 0 0;
+                margin: 0 15% 5% 15%;
+                padding: 15% 0 0 0;
             }
             p,h2{
-                margin: 0 12% 0 12%;
-                padding: 0 0 12% 0;
+                margin: 0 15% 0 15%;
+                padding: 0 0 15% 0;
             }
         }
         .uni{
@@ -116,12 +116,12 @@ const TodoStyle = styled.div`
         .queHacemos, .uni, .noUni, .consul{
             width:100%;
             p:first-child, h3{
-                margin: 0 12% 5% 12%;
-                padding: 12% 0 0 0;
+                margin: 0 20% 5% 20%;
+                padding: 20% 0 0 0;
             }
             p,h2{
-                margin: 0 12% 0 12%;
-                padding: 0 0 12% 0;
+                margin: 0 20% 0 20%;
+                padding: 0 0 20% 0;
             }
         }
         .uni{

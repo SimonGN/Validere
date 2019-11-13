@@ -8,6 +8,8 @@ import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Intro from "../components/Intro/Intro";
 import ToDo from "../components/Todo/Todo";
+import Experiences from "../components/Experiences/Experiences";
+import Pictures from "../components/Pictures/Pictures";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -68,7 +70,10 @@ class Home extends React.Component {
         <Nav />
         <Intro />
         <ToDo />
+        <Experiences />
+        <Pictures />
         <Footer />
+        
       </React.Fragment>
     );
   }
