@@ -6,7 +6,7 @@ module.exports = new NextI18Next({
   allLanguages: ['es', 'en'],
   defaultLanguage: 'es',
   otherLanguages: ['en'],
-  defaultNS: 'Home',
+  defaultNS: 'home',
   initImmediate: true,
   preload: ['es', 'en'],
   localePath: 'static/locales',
