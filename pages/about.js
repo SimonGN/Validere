@@ -62,7 +62,7 @@ class About extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Meta />
+        <Meta title="Validere – About"/>
         <Nav />
         <Abouttext />
         <Footer />

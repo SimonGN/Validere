@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-const Meta = () => {
+const Meta = ( {title, content}) => {
   return (
     <React.Fragment>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="description" content="Validere, validación educativa"/>
+        <meta name="description" content={content ||'Validere, validación educativa' }/>
         
         <link rel="apple-touch-icon" sizes="57x57" href="./static/img/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="./static/img/favicon/apple-icon-60x60.png"/>
@@ -23,7 +23,7 @@ const Meta = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon/favicon-16x16.png"/>
 
         
-        <title>Validere</title>
+        <title>{title || 'Validere'}</title>
       </Head>
       <style jsx global>{`
         @font-face {
