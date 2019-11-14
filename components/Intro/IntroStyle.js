@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 
 const IntroStyle = styled.div`
-
+    overflow: hidden;
     a{
         text-decoration:none;
     }
-    overflow: hidden;
+    
 
     .colum1{
         width:100%;
@@ -41,6 +41,9 @@ const IntroStyle = styled.div`
     }
     .title{
         margin-bottom:20%;
+    }
+    .textp{
+        padding-bottom:5%;
     }
 
     

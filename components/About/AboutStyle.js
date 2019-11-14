@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 const AboutStyle = styled.div`
+    overflow: hidden;
     a{
         text-decoration:none;
     }
@@ -22,9 +23,6 @@ const AboutStyle = styled.div`
         }
         p{
             margin-bottom:3%;
-        }
-        div{
-            
         }
         p:last-child{
             margin-bottom:15%;
@@ -48,11 +46,11 @@ const AboutStyle = styled.div`
     }
     .column2{
         margin: 0 auto;
-        padding: 20% 0 20% 0;
+        padding: 20% 0 35% 0;
         img{
             display: flex;
             justify-content: center;
-            width:80%;
+            width:40%;
             margin: 0 auto;
             z-index:-1;
            
@@ -63,8 +61,7 @@ const AboutStyle = styled.div`
         z-index:1;
         padding-bottom: 10%;
         img{
-            width:100%;
-            object-fit:cover;
+            width: 280vw;
             z-index:10;
         }
     }
@@ -112,6 +109,9 @@ const AboutStyle = styled.div`
         }
         .image{
             padding-bottom: 8%;
+            img{
+                width: 100vw;
+            }
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
@@ -150,6 +150,9 @@ const AboutStyle = styled.div`
         }
         .image{
             padding-bottom: 7%;
+            img{
+                width: 100vw;
+            }
         }
         button{
             padding: 5% 10% 4% 10%;  
@@ -194,6 +197,9 @@ const AboutStyle = styled.div`
         }
         .image{
             padding-bottom: 6%;
+            img{
+                width: 100vw;
+            }
         }
         button{
             padding: 5% 10% 4% 10%;  
@@ -238,6 +244,9 @@ const AboutStyle = styled.div`
         }
         .image{
             padding-bottom: 5%;
+            img{
+                width: 100vw;
+            }
         }
         button{
             padding: 5% 10% 4% 10%;  

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const NavStyle = styled.div`
 z-index:99;
+background-color:white;
     p, a{
         text-decoration:none;
         cursor:pointer;
@@ -49,6 +50,7 @@ z-index:99;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
+        background-color:transparent;
         div{
             width:50%;
         }
@@ -61,6 +63,7 @@ z-index:99;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
+        background-color:transparent;
         div{
             width:50%;
             padding-top:1%;
@@ -77,6 +80,7 @@ z-index:99;
         }
     }
     @media only screen and (min-width:1441px){
+        background-color:transparent;
         div{
             width:40%;
             padding-top:1%;

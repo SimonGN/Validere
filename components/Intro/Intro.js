@@ -36,8 +36,7 @@ const Intro = props => {
                         <Fonth1>{t("title1")}</Fonth1>
                         <Fonth1>{t("title2")}</Fonth1>
                     </div>
-                    
-                    <Paragraph  data-aos="fade-in" data-aos-duration="2000">{t("description1")}</Paragraph>
+                    <Paragraph className="textp" data-aos="fade-in" data-aos-duration="2000">{t("description1")}</Paragraph>
                     <Paragraph  data-aos="fade-in" data-aos-duration="2000">{t("description2")}</Paragraph>
                 </div>
 

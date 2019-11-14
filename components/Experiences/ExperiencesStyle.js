@@ -46,7 +46,7 @@ const ExperiencesStyle = styled.div`
         }
     }
     .experiences1, .experiences2{
-        width:58%;
+        width:88%;
         margin:0 auto;
     }
     .experiences1{
