@@ -27,40 +27,40 @@ const Abouttext = props => {
             <div className="global">
                 <div className="column1">
                     <div className="about">
-                        <ParagraphTitle >{t("titleAbout")}</ParagraphTitle>
-                        <Paragraph >{t("descriptionAbout1")}</Paragraph>
-                        <Paragraph >{t("descriptionAbout2")}</Paragraph>
-                        <Paragraph >{t("descriptionAbout3")}</Paragraph>
+                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleAbout")}</ParagraphTitle>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout1")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout2")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout3")}</Paragraph>
                     </div>
                     <div className="mision">
-                        <ParagraphTitle >{t("titleMision")}</ParagraphTitle>
-                        <Paragraph >{t("descriptionMision1")}</Paragraph>
-                        <Paragraph >{t("descriptionMision2")}</Paragraph>
-                        <Paragraph >{t("descriptionMision3")}</Paragraph>
-                        <Paragraph >{t("descriptionMision4")}</Paragraph>
+                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleMision")}</ParagraphTitle>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision1")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision2")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision3")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision4")}</Paragraph>
                     </div>
                     <div className="contact">
-                        <ParagraphTitle >{t("titleContact")}</ParagraphTitle>
-                        <Paragraph >{t("descriptionContact1")}</Paragraph>
-                        <div className="emailPhone">
+                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleContact")}</ParagraphTitle>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000">{t("descriptionContact1")}</Paragraph>
+                        <div className="emailPhone" data-aos="fade-in" data-aos-duration="1000">
                             <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a>
                             <a href={`tel:${tel}`}><Paragraph>{t("tel")}</Paragraph></a>
                         </div>
 
-                        <div className="button">
-                            <a href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <button><h5>{t("button")}</h5></button> </a>
+                        <div className="button" data-aos="fade-in" data-aos-duration="1000">
+                            <a href={t("mailto")}> <button><h5>{t("button")}</h5></button> </a>
 
                         </div>
                     </div>
 
                 </div>
                 <div className="column2">
-                    <div>
-                        <img className="simbolo" src="/static/svg/simboloColorValidere.svg" />
+                    <div >
+                        <img className="simbolo" src="/static/svg/simboloColorValidere.svg" data-aos="fade-in" data-aos-duration="1000"/>
                     </div>
                 </div>
             </div>
-            <div className="image">
+            <div className="image"data-aos="fade-in" data-aos-duration="1000">
                 <img src="/static/img/imgAbout.jpg" />
             </div>
         </AboutStyle>

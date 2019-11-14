@@ -23,7 +23,7 @@ const Intro = props => {
         <IntroStyle >
 
 
-            <div className="colum1">
+            <div className="colum1" data-aos="fade-in" data-aos-duration="2000">
                 <img src="/static/img/validere.jpg" />
             </div>
 
@@ -32,18 +32,18 @@ const Intro = props => {
                     <Scroll />
                 </div>
                 <div className="text">
-                    <div className="title">
+                    <div className="title" data-aos="fade-in" data-aos-duration="2000">
                         <Fonth1>{t("title1")}</Fonth1>
                         <Fonth1>{t("title2")}</Fonth1>
                     </div>
                     
-                    <Paragraph  >{t("description1")}</Paragraph>
-                    <Paragraph  >{t("description2")}</Paragraph>
+                    <Paragraph  data-aos="fade-in" data-aos-duration="2000">{t("description1")}</Paragraph>
+                    <Paragraph  data-aos="fade-in" data-aos-duration="2000">{t("description2")}</Paragraph>
                 </div>
 
-                <div className="button">
-                    <a href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <Paragraph >{t("enlace1")}</Paragraph> </a>
-                    <a className="line"  href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <img src="/static/svg/line.svg" /> </a>
+                <div className="button" data-aos="fade-in" data-aos-duration="1000">
+                    <a href={t("mailto")}> <Paragraph >{t("enlace1")}</Paragraph> </a>
+                    <a className="line"  href={t("mailto")}> <img src="/static/svg/line.svg" /> </a>
 
                 </div>
 

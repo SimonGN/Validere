@@ -120,14 +120,14 @@ const AboutStyle = styled.div`
         }
         .column1{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
         }
         .about, .mision, .contact{
             margin: 0 12% 0 12%;
         }
         .column2{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
             div{
                 display: flex;
                 justify-content: center;
@@ -164,14 +164,14 @@ const AboutStyle = styled.div`
         }
         .column1{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
         }
         .about, .mision, .contact{
             margin: 0 15% 0 15%;
         }
         .column2{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
             div{
                 display: flex;
                 justify-content: center;
@@ -208,14 +208,14 @@ const AboutStyle = styled.div`
         }
         .column1{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
         }
         .about, .mision, .contact{
             margin: 0 20% 0 20%;
         }
         .column2{
             width:50%;
-            padding-top:15%;
+            padding-top:13%;
             div{
                 display: flex;
                 justify-content: center;
