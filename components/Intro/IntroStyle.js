@@ -28,6 +28,7 @@ const IntroStyle = styled.div`
     }
     .button{
         display:flex;
+        align-items: center;
         margin-top:15%;
         margin-bottom: 20%;
         p, img{

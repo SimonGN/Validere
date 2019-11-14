@@ -42,8 +42,9 @@ const Intro = props => {
                 </div>
 
                 <div className="button">
-                    <Link href="/about"><Paragraph >{t("enlace1")}</Paragraph></Link>
-                    <Link href="/about"><img className="line" src="/static/svg/line.svg" /></Link>
+                    <a href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <Paragraph >{t("enlace1")}</Paragraph> </a>
+                    <a className="line"  href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <img src="/static/svg/line.svg" /> </a>
+
                 </div>
 
             </div>

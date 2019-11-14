@@ -48,7 +48,8 @@ const Abouttext = props => {
                         </div>
 
                         <div className="button">
-                            <button><h5>{t("button")}</h5></button>
+                            <a href="mailto:email@validere.es?body=Complete this information:%0D%0D%0DName and Subname%0D%0DPhone%0D%0DContry%0D%0DName University/Center%0D%0DName of Title University%0D%0DDuration%0D%0DName of Titulation%0D%0D%0D%0DAnd add your text Email"> <button><h5>{t("button")}</h5></button> </a>
+
                         </div>
                     </div>
 

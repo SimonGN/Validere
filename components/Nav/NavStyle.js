@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 
 const NavStyle = styled.div`
-    p{
+z-index:99;
+    p, a{
         text-decoration:none;
         cursor:pointer;
     }

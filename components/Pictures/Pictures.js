@@ -7,19 +7,23 @@ const Pictures = props => {
 
         <PicturessStyle>
             <div className="column1">
-                <div>
-                    <img className="country" src="/static/img/country1.jpg" />
+                <div className="country1">
+                    <div className="color uno"></div>
+                    <img className="people1" src="/static/img/img4.jpg" />
                 </div>
-                <div>
-                    <img className="country" src="/static/img/country3.jpg" />
+                <div className="country2">
+                    <div className="color dos"></div>
+                    <img className="people1" src="/static/img/img6.jpg"/>
                 </div>
             </div>
             <div className="column2">
-                <div>
-                    <img className="country" src="/static/img/country2.jpg" />
+                <div className="country3">
+                    <div className="color tres"></div>
+                    <img className="people1" src="/static/img/img5.jpg" />
                 </div>
-                <div>
-                    <img className="country" src="/static/img/country4.jpg" />
+                <div className="country4">
+                    <div className="color cuatro"></div>
+                    <img className="people1" src="/static/img/img3.jpg" />
                 </div>
             </div>
 
