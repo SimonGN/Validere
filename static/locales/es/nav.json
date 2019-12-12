@@ -1,6 +1,7 @@
 {
-    "nav1": "Nosotros",
-    "nav2": "Contactar",
-    "mailto": "mailto:email@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email"
+    "nav1": "Qué hacemos",
+    "nav2": "Nosotros",
+    "nav3": "Validar",
+    "nav4": "Contacto"
 
    }
