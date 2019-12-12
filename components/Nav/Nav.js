@@ -21,9 +21,11 @@ const Nav = props => {
         <NavStyle >
             <div>
                 <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
+                <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
                 <Link href="/index"><img className="simbolo" src="/static/svg/simboloValidere.svg" /></Link>
                 <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
-                <a href={t("mailto")}> <Paragraph size="13px" >{t("nav2")}</Paragraph> </a>
+                <Link href="/validate"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>
+                <Link href="/about"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
             </div>
 
         </NavStyle>

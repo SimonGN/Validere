@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 
 import { FooterStyle } from "./FooterStyle";
 import Paragraph from "../../styles/fontsStyles/paragraph";
@@ -23,7 +22,7 @@ const Footer = props => {
         <FooterStyle >
             <div className="footer">
                 <div className="option">
-                    <a href={`mailto:${email}`}><Paragraph size="13px" >{t("email")}</Paragraph></a>
+                    <a href={`mailto:${email}`}><Paragraph size="13px" >{t("email")}</Paragraph></a> 
                     <a href={`tel:${phone}`}><Paragraph size="13px" >{t("phone")}</Paragraph></a>
                     <a href="/"><Paragraph size="13px" >{t("termsConditions")}</Paragraph></a>
                     <a href="/"><Paragraph size="13px" >{t("privacyPolicy")}</Paragraph></a>
@@ -36,8 +35,8 @@ const Footer = props => {
             </div>
             <div className="copy">
                 <Paragraph size="10px" spacing="0,5px" lineheight="13px">
-                    Copyright © by ––––––––, 2019. All rights reserved. All materials
-                    on this website are intellectual property of ––––––––.
+                    Copyright © by Validere, 2019. All rights reserved. All materials
+                    on this website are intellectual property of Validere.
                 </Paragraph>
             </div>
 

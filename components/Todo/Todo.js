@@ -7,17 +7,13 @@ import Titleh3 from "../../styles/fontsStyles/titleh3"
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
 
 
-import { i18n, withTranslation } from '../../i18n'
+import {withTranslation } from '../../i18n'
 
-const changeLanguage = (language, setLangauge) => {
-    i18n.changeLanguage(language)
-    setLangauge(language)
-}
+
 
 
 const Todo = props => {
     const { t } = props;
-    const [language, setLangauge] = useState(i18n.language)
     return (
         <TodoStyle >
             <div className="colum1">

@@ -1,22 +1,12 @@
 import React from "react";
+import { ValidateStyle } from "./ValidateStyle";
 
-import { AboutStyle } from "./AboutStyle";
+const ValidatePage = props => {
 
-import Paragraph from "../../styles/fontsStyles/paragraph";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
-
-
-
-import {withTranslation } from '../../i18n'
-
-
-const Abouttext = props => {
-    const { t } = props;
-    const email = t("email");
-    const tel = t("tel");
     return (
-        <AboutStyle >
-            <div className="global">
+
+        <ValidateStyle>
+               <div className="global">
                 <div className="column1">
                     <div className="about">
                         <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleAbout")}</ParagraphTitle>
@@ -31,7 +21,7 @@ const Abouttext = props => {
                         <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision3")}</Paragraph>
                         <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision4")}</Paragraph>
                     </div>
-                    {/* <div className="contact">
+                    <div className="contact">
                         <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleContact")}</ParagraphTitle>
                         <Paragraph data-aos="fade-in" data-aos-duration="1000">{t("descriptionContact1")}</Paragraph>
                         <div className="emailPhone" data-aos="fade-in" data-aos-duration="1000">
@@ -43,7 +33,8 @@ const Abouttext = props => {
                             <a href={t("mailto")}> <button><h5>{t("button")}</h5></button> </a>
 
                         </div>
-                    </div> */}
+                    </div>
+
                 </div>
                 <div className="column2">
                     <div >
@@ -54,9 +45,10 @@ const Abouttext = props => {
             <div className="image"data-aos="fade-in" data-aos-duration="1000">
                 <img src="/static/img/imgAbout.jpg" />
             </div>
-            
-        </AboutStyle>
-    );
-};
 
-export default withTranslation("about")(Abouttext);
+        </ValidateStyle>
+    )
+
+}
+
+export default ValidatePage;

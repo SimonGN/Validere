@@ -123,7 +123,7 @@ const AboutStyle = styled.div`
             padding-top:13%;
         }
         .about, .mision, .contact{
-            margin: 0 12% 0 12%;
+            margin: 0 6% 0 12%;
         }
         .column2{
             width:50%;
@@ -170,7 +170,7 @@ const AboutStyle = styled.div`
             padding-top:13%;
         }
         .about, .mision, .contact{
-            margin: 0 15% 0 15%;
+            margin: 0 6% 0 15%;
         }
         .column2{
             width:50%;
@@ -217,7 +217,7 @@ const AboutStyle = styled.div`
             padding-top:13%;
         }
         .about, .mision, .contact{
-            margin: 0 20% 0 20%;
+            margin: 0 6% 0 20%;
         }
         .column2{
             width:50%;

@@ -9,17 +9,12 @@ import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
 
 
 
-import { i18n, withTranslation } from '../../i18n'
+import {withTranslation } from '../../i18n'
 
-const changeLanguage = (language, setLangauge) => {
-    i18n.changeLanguage(language)
-    setLangauge(language)
-}
 
 
 const Experiences = props => {
     const { t } = props;
-    const [language, setLangauge] = useState(i18n.language)
     return (
         <ExperiencesStyle >
             <div className="column1">

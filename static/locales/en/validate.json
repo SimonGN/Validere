@@ -1,9 +1,30 @@
 {
-    "titleValidate": "Reserva Cita con Nosotros",
-    "subtitleValidate": "Rellena tus datos",
+    "titleValidate": "Validar",
+    "subtitleValidate": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget.",
 
-    "nameSurname":"Escribe tu nombre y apellido",
-    "email":"Escribe tu email de contacto",
-    "phone":"Escribe tu teléfono de contacto"
+    "titleValidate2": "Comienza la validación",
+
+    "nameSurname":"Nombre y Apellidos",
+    "email":"Email",
+    "phone":"Teléfono",
+    "country":"País",
+    "university":"Nombre Universidad/Centro",
+    "selectUniversity0": "Título Universitario",
+    "selectUniversity1": "Uno",
+    "selectUniversity2": "Dos",
+    "selectUniversity3": "Tres", 
+    "nameUniversity":"Nombre de la Titulación",
+    "selectTime0":"Duración de 2 años",
+    "selectTime1":"Duración de 2 años",
+    "selectTime2":"Duración de 2 años",
+    "level":"Nivel Académico",
+
+    "alert1":"Campo obligatorio",
+
+    "button":"Enviar"
+
+
+
+
 
    }

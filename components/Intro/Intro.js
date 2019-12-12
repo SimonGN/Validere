@@ -8,17 +8,11 @@ import Fonth1 from "../../styles/fontsStyles/titleh1"
 import Scroll from "../Scroll/Scroll";
 
 
-import { i18n, withTranslation } from '../../i18n'
-
-const changeLanguage = (language, setLangauge) => {
-    i18n.changeLanguage(language)
-    setLangauge(language)
-}
+import {withTranslation } from '../../i18n'
 
 
 const Intro = props => {
     const { t } = props;
-    const [language, setLangauge] = useState(i18n.language)
     return (
         <IntroStyle >
 
