@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 const TodoStyle = styled.div`
-
     .queHacemos, .uni, .noUni, .consul{
         width:90%;
         margin: 0 auto;
@@ -15,6 +14,10 @@ const TodoStyle = styled.div`
             margin-bottom:15%;
         }
     }
+    ul{
+        padding-inline-start: 21px;
+        list-style-type: square;
+    }
  
     
     
@@ -25,26 +28,29 @@ const TodoStyle = styled.div`
             width:50%;
         }
         .queHacemos, .uni, .noUni, .consul{
-            width:100%;
-            p:first-child, h3{
-                margin: 0 12% 5% 12%;
-                padding: 12% 0 0 0;
-            }
-            p,h2{
-                margin: 0 12% 0 12%;
-                padding: 0 0 12% 0;
-            }
-        }
-        .uni{
-            border-top: 1px solid black;
-            border-right: 1px solid black;
+            width:80%;
+            height: 60%;
 
         }
-        .queHacemos{
-            border-right: 1px solid black;
+        .colum1{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .colum2{
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .box1, .box2{
+            border-bottom: 1px solid black;
+        }
+        .queHacemos, .uni, .consul{
+            margin:10%;
         }
         .noUni{
-            border-bottom: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
@@ -54,27 +60,23 @@ const TodoStyle = styled.div`
             width:50%;
         }
         .queHacemos, .uni, .noUni, .consul{
-            width:100%;
-            p:first-child, h3{
-                margin: 0 12% 5% 12%;
-                padding: 12% 0 0 0;
-            }
-            p,h2{
-                margin: 0 12% 0 12%;
-                padding: 0 0 12% 0;
-            }
+            width:80%;
+            height: 60%;
         }
-        .uni{
-            border-top: 1px solid black;
-            border-right: 1px solid black;
 
+        .colum2{
+            border-left: 1px solid black;
         }
-        .queHacemos{
-            
-            border-right: 1px solid black;
+        .box1, .box2{
+            border-bottom: 1px solid black;
+        }
+        .queHacemos, .uni, .consul{
+            margin:10%;
         }
         .noUni{
-            border-bottom: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
@@ -83,28 +85,26 @@ const TodoStyle = styled.div`
         .colum1, .colum2{
             width:50%;
         }
+        .queHacemos, .uni, .consul{
+            margin:0 auto;
+            margin-top:10%;
+            margin-bottom:10%;
+        }
         .queHacemos, .uni, .noUni, .consul{
-            width:100%;
-            p:first-child, h3{
-                margin: 0 15% 5% 15%;
-                padding: 15% 0 0 0;
-            }
-            p,h2{
-                margin: 0 15% 0 15%;
-                padding: 0 0 15% 0;
-            }
+            width:70%;
+            height: 60%;
         }
-        .uni{
-            border-top: 1px solid black;
-            border-right: 1px solid black;
-
+        .colum2{
+            border-left: 1px solid black;
         }
-        .queHacemos{
-            
-            border-right: 1px solid black;
-        }
-        .noUni{
+        .box1, .box2{
             border-bottom: 1px solid black;
+        }
+
+        .noUni{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     @media only screen and (min-width:1441px){
@@ -113,28 +113,26 @@ const TodoStyle = styled.div`
         .colum1, .colum2{
             width:50%;
         }
+        .queHacemos, .uni, .consul{
+            margin:0 auto;
+            margin-top:10%;
+            margin-bottom:10%;
+        }
         .queHacemos, .uni, .noUni, .consul{
-            width:100%;
-            p:first-child, h3{
-                margin: 0 20% 5% 20%;
-                padding: 20% 0 0 0;
-            }
-            p,h2{
-                margin: 0 20% 0 20%;
-                padding: 0 0 20% 0;
-            }
+            width:70%;
+            height: 60%;
         }
-        .uni{
-            border-top: 1px solid black;
-            border-right: 1px solid black;
-
+        .colum2{
+            border-left: 1px solid black;
         }
-        .queHacemos{
-            
-            border-right: 1px solid black;
-        }
-        .noUni{
+        .box1, .box2{
             border-bottom: 1px solid black;
+        }
+
+        .noUni{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 

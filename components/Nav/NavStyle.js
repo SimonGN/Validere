@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const NavStyle = styled.div`
 z-index:99;
 background-color:white;
+position:fixed;
+width:100%;
+
     p, a{
         text-decoration:none;
         cursor:pointer;
@@ -17,9 +20,6 @@ background-color:white;
         display: flex;
         justify-content: center;
     }
-
-    position:fixed;
-    width:100%;
     div{
         padding-top:2%;
         padding-bottom:2%;
@@ -39,11 +39,11 @@ background-color:white;
     
     @media only screen and (min-width:415px) and (max-width:768px){
         div{
-            width:50%;
+            width:90%;
         }
         .logo{
             display:block;
-            width:40%;
+            width:25%;
         }
         .simbolo{
             display:none;
@@ -73,7 +73,7 @@ background-color:white;
         
         .logo{
             display:block;
-            width:30%;
+            width:25%;
         } 
         .simbolo{
             display:none;
@@ -89,7 +89,7 @@ background-color:white;
         
         .logo{
             display:block;
-            width:30%;
+            width:25%;
         } 
         .simbolo{
             display:none;
