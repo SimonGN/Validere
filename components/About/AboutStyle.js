@@ -92,7 +92,7 @@ const AboutStyle = styled.div`
         }
         .column1{
             width:50%;
-            padding: 15% 5% 10% 5%;
+            padding: 15% 5% 0% 5%;
         }
         .column2{
             width:50%;

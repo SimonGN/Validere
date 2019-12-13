@@ -1,23 +1,37 @@
 import styled from 'styled-components';
 
 const TimeLineStyle = styled.div`
+    width:100%;
+    height:auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color:white;
     margin-bottom:30%;
+    .title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    .imgs{
+        display:none;
+    }
+
     .box {
         width:90%;
         margin: 0 auto;
         display:flex;
+        flex-direction: column;
         margin-bottom: 10%;
         vertical-align: baseline;
         justify-content: space-between;
         align-items: center;
     }
     .imgs1, .imgs2, .imgs3, .imgs4{
-        width:22%;
-        margin-right:5%;
+        width: auto;
+    margin: 0;
     }
     .text1, .text2, .text3, .text4{
-        width:80%;
-        margin-bottom:5%;
+        width:100%;
         h3{
             margin-bottom:3%;
         }
@@ -32,7 +46,6 @@ const TimeLineStyle = styled.div`
     @media only screen and (min-width:415px) and (max-width:768px){
         width:90%;
         margin:0 auto;
-        margin-bottom: 12%;
         .text1, .text2, .text3, .text4{
             width:40%;
         }
@@ -44,31 +57,49 @@ const TimeLineStyle = styled.div`
         }
         .imgs1, .imgs3{
             order:1;
-            margin-right: 5%;
-            margin-left: 8%;
+            margin: 0;
+            width: auto;
         } 
         .imgs2, .imgs4{
-            margin-left: 5%;
-            margin-right: 10%;
             order:3;
+            width: auto;
+            margin: 0;
+            margin-right: 5%;
         }
-        .box{
-            width:84%;
+        .imgs1, .imgs2, .imgs3, .imgs4{
             margin: 0 auto;
-            margin-bottom:10%;
+        }
+        .imgs1, .imgs2, .imgs4{
+            width: 20%;
+        }
+        .imgs3{
+            width: 59%;
+        }
+
+        .box{
+            width:85%;
+            margin: 0 auto;
+            margin-bottom: 10%;
             position: relative;
+            flex-direction: row;
             h3{
                 width:100%;
             }
             p{
                 width:100%;
+            }
+        }
+        .imgs{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 10%;
             }
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         width:90%;
         margin:0 auto;
-        margin-bottom: 12%;
         .text1, .text2, .text3, .text4{
             width:40%;
         }
@@ -80,32 +111,49 @@ const TimeLineStyle = styled.div`
         }
         .imgs1, .imgs3{
             order:1;
-            margin-right: 5%;
-            margin-left: 8%;
+            margin: 0;
+            width: auto;
         } 
         .imgs2, .imgs4{
-            margin-left: 5%;
-            margin-right: 10%;
             order:3;
+            width: auto;
+            margin: 0;
+            margin-right: 5%;
         }
-        .box{
-            width:84%;
+        .imgs1, .imgs2, .imgs3, .imgs4{
             margin: 0 auto;
-            margin-bottom:10%;
+        }
+        .imgs1, .imgs2, .imgs4{
+            width: 20%;
+        }
+        .imgs3{
+            width: 41%;
+        }
+
+        .box{
+            width:85%;
+            margin: 0 auto;
+            margin-bottom: 10%;
             position: relative;
+            flex-direction: row;
             h3{
                 width:100%;
-                margin-bottom:1%;
             }
             p{
                 width:100%;
+            }
+        }
+        .imgs{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 8%;
             }
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        width:85%;
+        width:70%;
         margin:0 auto;
-        margin-bottom: 15%;
         .text1, .text2, .text3, .text4{
             width:40%;
         }
@@ -117,32 +165,49 @@ const TimeLineStyle = styled.div`
         }
         .imgs1, .imgs3{
             order:1;
-            margin-right: 5%;
-            margin-left: 8%;
+            margin: 0;
+            width: auto;
         } 
         .imgs2, .imgs4{
-            margin-left: 5%;
-            margin-right: 10%;
             order:3;
+            width: auto;
+            margin: 0;
+            margin-right: 5%;
         }
-        .box{
-            width:84%;
+        .imgs1, .imgs2, .imgs3, .imgs4{
             margin: 0 auto;
-            margin-bottom:10%;
+        }
+        .imgs1, .imgs2, .imgs4{
+            width: 20%;
+        }
+        .imgs3{
+            width: 41%;
+        }
+
+        .box{
+            width:85%;
+            margin: 0 auto;
+            margin-bottom: 10%;
             position: relative;
+            flex-direction: row;
             h3{
                 width:100%;
-                margin-bottom:1%;
             }
             p{
                 width:100%;
+            }
+        }
+        .imgs{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 7%;
             }
         }
     }
     @media only screen and (min-width:1441px){
-        width:80%;
+        width:70%;
         margin:0 auto;
-        margin-bottom: 15%;
         .text1, .text2, .text3, .text4{
             width:40%;
         }
@@ -153,28 +218,44 @@ const TimeLineStyle = styled.div`
             order:1;
         }
         .imgs1, .imgs3{
-            width:15%;
             order:1;
-            margin-right: 5%;
-            margin-left: 8%;
+            margin: 0;
+            width: auto;
         } 
         .imgs2, .imgs4{
-            width:15%;
-            margin-left: 5%;
-            margin-right: 10%;
             order:3;
+            width: auto;
+            margin: 0;
+            margin-right: 5%;
         }
-        .box{
-            width:84%;
+        .imgs1, .imgs2, .imgs3, .imgs4{
             margin: 0 auto;
-            margin-bottom:10%;
+        }
+        .imgs1, .imgs2, .imgs4{
+            width: 20%;
+        }
+        .imgs3{
+            width: 41%;
+        }
+
+        .box{
+            width:85%;
+            margin: 0 auto;
+            margin-bottom: 10%;
             position: relative;
+            flex-direction: row;
             h3{
                 width:100%;
-                margin-bottom:1%;
             }
             p{
                 width:100%;
+            }
+        }
+        .imgs{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 5%;
             }
         }
     }
@@ -186,28 +267,28 @@ const Line = styled.div`
         display:block;
         position:absolute;
         left: 50%;
-        height:160%;
+        height: 190%;
         width:2px;
         color: black;
-        border-right: 2px solid #A3C5F5;
+        border-right: 2px solid black;
       }
     @media only screen and (min-width:769px) and (max-width:1024px){
         display:block;
         position:absolute;
         left: 50%;
-        height:175%;
+        height:230%;
         width:2px;
         color: black;
-        border-right: 2px solid #A3C5F5;
+        border-right: 2px solid black;
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
         display:block;
         position:absolute;
         left: 50%;
-        height:210%;
+        height:240%;
         width:2px;
         color: black;
-        border-right: 2px solid #A3C5F5;
+        border-right: 2px solid black;
     }
     @media only screen and (min-width:1441px){
         display:block;
@@ -216,7 +297,7 @@ const Line = styled.div`
         height:200%;
         width:2px;
         color: black;
-        border-right: 2px solid #A3C5F5;
+        border-right: 2px solid black;
     }
 `;
 
@@ -232,7 +313,7 @@ const Circle = styled.div`
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background-color: white;
-        border: 2px solid #A3C5F5;
+        border: 2px solid black;
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         display:block;
@@ -242,7 +323,7 @@ const Circle = styled.div`
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background-color: white;
-        border: 2px solid #A3C5F5;
+        border: 2px solid black;
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
         display:block;
@@ -252,7 +333,7 @@ const Circle = styled.div`
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background: white;
-        border: 2px solid #A3C5F5;
+        border: 2px solid black;
     }
     @media only screen and (min-width:1441px){
         display:block;
@@ -262,7 +343,7 @@ const Circle = styled.div`
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background: white;
-        border: 2px solid #A3C5F5;
+        border: 2px solid black;
     }
 `;
 

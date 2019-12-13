@@ -85,7 +85,7 @@ const ExperiencesStyle = styled.div`
     @media only screen and (min-width:769px) and (max-width:1024px){
         display: flex;
         .column1{
-            width:33%;
+            width: 40%;
             padding-top: 10%;
         }
 
@@ -96,6 +96,10 @@ const ExperiencesStyle = styled.div`
         }
         .column2{
             width:50%;
+        }
+        .experiences1, .experiences2{
+            width:65%;
+            height:auto;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
@@ -103,7 +107,7 @@ const ExperiencesStyle = styled.div`
         display: flex;
 
         .column1{
-            width:33%;
+            width:35%;
             padding-top: 10%;
         }
 
@@ -114,6 +118,10 @@ const ExperiencesStyle = styled.div`
         }
         .column2{
             width:50%;
+        }
+        .experiences1, .experiences2{
+            width:65%;
+            height:auto;
         }
     }
     @media only screen and (min-width:1441px){
@@ -130,6 +138,10 @@ const ExperiencesStyle = styled.div`
         }
         .column2{
             width:50%;
+        }
+        .experiences1, .experiences2{
+            width:65%;
+            height:auto;
         }
     }
 

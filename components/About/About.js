@@ -2,6 +2,8 @@ import React from "react";
 
 import { AboutStyle } from "./AboutStyle";
 
+import TimeLine from "../TimeLine/TimeLine"
+
 import Paragraph from "../../styles/fontsStyles/paragraph";
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
 
@@ -12,8 +14,6 @@ import {withTranslation } from '../../i18n'
 
 const Abouttext = props => {
     const { t } = props;
-    const email = t("email");
-    const tel = t("tel");
     return (
         <AboutStyle >
             <div className="global">
@@ -31,19 +31,7 @@ const Abouttext = props => {
                         <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision3")}</Paragraph>
                         <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision4")}</Paragraph>
                     </div>
-                    {/* <div className="contact">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleContact")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000">{t("descriptionContact1")}</Paragraph>
-                        <div className="emailPhone" data-aos="fade-in" data-aos-duration="1000">
-                            <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a>
-                            <a href={`tel:${tel}`}><Paragraph>{t("tel")}</Paragraph></a>
-                        </div>
 
-                        <div className="button" data-aos="fade-in" data-aos-duration="1000">
-                            <a href={t("mailto")}> <button><h5>{t("button")}</h5></button> </a>
-
-                        </div>
-                    </div> */}
                 </div>
                 <div className="column2">
                     <div >
@@ -51,6 +39,7 @@ const Abouttext = props => {
                     </div>
                 </div>
             </div>
+            <TimeLine/>
             <div className="image"data-aos="fade-in" data-aos-duration="1000">
                 <img src="/static/img/imgAbout.jpg" />
             </div>

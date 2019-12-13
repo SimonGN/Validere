@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const titleh3 = styled.h2`
     font-family: "Panama";
     color: black;
-    font-size: 40px;
+    font-size: ${props => (props.size ? props.size : '40px')};
     letter-spacing: 0px;
     line-height:45px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
