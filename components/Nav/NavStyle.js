@@ -3,9 +3,12 @@ import styled from 'styled-components';
 
 const NavStyle = styled.div`
 z-index:99;
+
 background-color:white;
 position:fixed;
 width:100%;
+/* -webkit-filter: blur(20px);
+filter: blur(20px); */
 
     p, a{
         text-decoration:none;

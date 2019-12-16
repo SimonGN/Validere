@@ -1,49 +1,33 @@
 import React from "react";
 import { ValidateStyle } from "./ValidateStyle";
 
+import Paragraph from "../../styles/fontsStyles/paragraph";
+import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
+import Titleh3 from "../../styles/fontsStyles/titleh3"
+
+import { withTranslation } from '../../i18n'
+
+import Form from "../Form/Form"
+
 const ValidatePage = props => {
+    const { t } = props;
 
     return (
 
         <ValidateStyle>
-               <div className="global">
+            <div className="global">
                 <div className="column1">
-                    <div className="about">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleAbout")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout1")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout2")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout3")}</Paragraph>
-                    </div>
-                    <div className="mision">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleMision")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision1")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision2")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision3")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision4")}</Paragraph>
-                    </div>
-                    <div className="contact">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleContact")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000">{t("descriptionContact1")}</Paragraph>
-                        <div className="emailPhone" data-aos="fade-in" data-aos-duration="1000">
-                            <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a>
-                            <a href={`tel:${tel}`}><Paragraph>{t("tel")}</Paragraph></a>
-                        </div>
+                    <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleValidate")}</ParagraphTitle>
+                    <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("subtitleValidate")}</Paragraph>
+                </div>
 
-                        <div className="button" data-aos="fade-in" data-aos-duration="1000">
-                            <a href={t("mailto")}> <button><h5>{t("button")}</h5></button> </a>
+                <div className="contact">
+                    <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleValidate2")}</ParagraphTitle>
+                    <Titleh3 data-aos="fade-in" data-aos-duration="1000" >{t("subtitleValidate2")}</Titleh3>
+                    <Form />
 
-                        </div>
-                    </div>
 
                 </div>
-                <div className="column2">
-                    <div >
-                        <img className="simbolo" src="/static/svg/simboloColorValidere.svg" data-aos="fade-in" data-aos-duration="1000"/>
-                    </div>
-                </div>
-            </div>
-            <div className="image"data-aos="fade-in" data-aos-duration="1000">
-                <img src="/static/img/imgAbout.jpg" />
             </div>
 
         </ValidateStyle>
@@ -51,4 +35,4 @@ const ValidatePage = props => {
 
 }
 
-export default ValidatePage;
+export default withTranslation("validate")(ValidatePage);

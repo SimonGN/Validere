@@ -119,7 +119,7 @@ const TodoStyle = styled.div`
             margin-bottom:10%;
         }
         .queHacemos, .uni, .noUni, .consul{
-            width:70%;
+            width:60%;
             height: 60%;
         }
         .colum2{

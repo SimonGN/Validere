@@ -140,7 +140,7 @@ const ExperiencesStyle = styled.div`
             width:50%;
         }
         .experiences1, .experiences2{
-            width:65%;
+            width:60%;
             height:auto;
         }
     }

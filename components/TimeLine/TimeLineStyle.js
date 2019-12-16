@@ -294,7 +294,7 @@ const Line = styled.div`
         display:block;
         position:absolute;
         left: 50%;
-        height:200%;
+        height:380%;
         width:2px;
         color: black;
         border-right: 2px solid black;
@@ -336,6 +336,7 @@ const Circle = styled.div`
         border: 2px solid black;
     }
     @media only screen and (min-width:1441px){
+        left: calc(50% - 9px);
         display:block;
         width: 20px;
         height: 20px;
