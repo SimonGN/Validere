@@ -7,7 +7,7 @@ import Titleh3 from "../../styles/fontsStyles/titleh3"
 
 import { withTranslation } from '../../i18n'
 
-import FormValidate from "../Form/FormValidate"
+import FormContact from "../Form/FormContact"
 
 const ContactPage = props => {
     const { t } = props;
@@ -21,14 +21,14 @@ const ContactPage = props => {
                     <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("description")}</Paragraph>
                     <div>
                         <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("email")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("phone")}</Paragraph>
+                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("tel")}</Paragraph>
                     </div>
                 </div>
 
                 <div className="contact">
                     <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("title2")}</ParagraphTitle>
                     <Titleh3 data-aos="fade-in" data-aos-duration="1000" >{t("subtitle")}</Titleh3>
-                    <FormValidate />
+                    <FormContact />
 
                 </div>
             </div>

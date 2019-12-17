@@ -71,13 +71,12 @@ const FormContact = props => {
                                     value={values.phone}
                                 />
                             </div>
-                            <textarea
-                                name="comentarios"
-                                rows="10" cols="40">
-                                {t("contactWrite")}
+                            <textarea  
+                            data-aos="fade-in"
+                                placeholder={t("contactWrite")}
+                                name="comentarios">
+                                    
                             </textarea>
-
-
 
                             <Button content={t("button")} />
 
