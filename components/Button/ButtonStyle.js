@@ -27,13 +27,16 @@ const ButtonStyle = styled.div`
         width:40%;
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-    display:inline-block;
+        display:inline-block;
+        width: 30%;
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
         display:inline-block;
+        width: 30%;
     }
     @media only screen and (min-width:1441px){
         display:inline-block;
+        width: 30%;
     }
 
 `;

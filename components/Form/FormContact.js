@@ -1,14 +1,12 @@
 import React from "react";
 import { FormStyle } from "./FormStyle";
 
-
-
 import { withTranslation } from '../../i18n'
 import { Formik } from 'formik';
 
 import Button from "../Button/Button"
 
-const Form = props => {
+const FormContact = props => {
     const { t } = props;
 
     return (
@@ -44,7 +42,7 @@ const Form = props => {
                     /* and other goodies */
                 }) => (
                         <form onSubmit={handleSubmit}>
-                            <div>
+                            <div data-aos="fade-in">
                                 <input
                                     placeholder={t("nameSurname")}
                                     type="text"
@@ -55,7 +53,7 @@ const Form = props => {
                                 />
                             </div>
 
-                            <div>
+                            <div data-aos="fade-in">
                                 <input
                                     placeholder={t("email")}
                                     type="text"
@@ -73,56 +71,14 @@ const Form = props => {
                                     value={values.phone}
                                 />
                             </div>
-                            <div>
-                                <input
-                                    placeholder={t("country")}
-                                    type="text"
-                                    name="country"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.country}
-                                />
-                                <input
-                                    placeholder={t("university")}
-                                    type="text"
-                                    name="university"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.university}
-                                />
-                            </div>
-                            <div>
-                                <select>
-                                    <option>{t("selectUniversity0")}</option>
-                                    <option>{t("selectUniversity1")}</option>
-                                    <option>{t("selectUniversity2")}</option>
-                                    <option>{t("selectUniversity3")}</option>
-                                </select>
-                                <input
-                                    placeholder={t("nameUniversity")}
-                                    type="text"
-                                    name="nameUniversity"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.nameUniversity}
-                                />
-                            </div>
-                            <div>
-                                <select>
-                                    <option>{t("nameUniversity")}</option>
-                                    <option>{t("selectTime0")}</option>
-                                    <option>{t("selectTime1")}</option>
-                                    <option>{t("selectTime2")}</option>
-                                </select>
-                                <input
-                                    placeholder={t("level")}
-                                    type="text"
-                                    name="level"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.level}
-                                />
-                            </div>
+                            <textarea
+                                name="comentarios"
+                                rows="10" cols="40">
+                                {t("contactWrite")}
+                            </textarea>
+
+
+
                             <Button content={t("button")} />
 
                         </form>
@@ -133,4 +89,4 @@ const Form = props => {
 
 }
 
-export default withTranslation("validate")(Form);
+export default withTranslation("contact")(FormContact);

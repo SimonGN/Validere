@@ -18,7 +18,7 @@ const Nav = props => {
                 <Link href="/index"><img className="simbolo" src="/static/svg/simboloValidere.svg" /></Link>
                 <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
                 <Link href="/validate"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>
-                <Link href="/about"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
+                <Link href="/contact"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
             </div>
 
         </NavStyle>

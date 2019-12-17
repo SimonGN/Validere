@@ -63,19 +63,30 @@ const FormStyle = styled.div`
             
         }
     }
-    @media only screen and (min-width:769px) and (max-width:1024px){
-            div{
-                display: flex;
-            }
-        
-  
-    }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:769px){
+        input, select{
+            margin-bottom:8%;
+            width:96%;
+            padding-bottom:2.5%;
+            padding-left:3%;
+            &:nth-child(2){
+            margin-left: 5%;
 
+        }
+        }
+        select{
+            padding-left:2%;
+            width:99%;
+        }
+        .readmore{
+            margin-bottom:20%;
+        }
+        div{
+            display: flex;
+            
+        }
     }
-    @media only screen and (min-width:1441px){
 
-    }
 
 `;
 

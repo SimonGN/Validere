@@ -7,7 +7,7 @@ import Titleh3 from "../../styles/fontsStyles/titleh3"
 
 import { withTranslation } from '../../i18n'
 
-import Form from "../Form/Form"
+import FormValidate from "../Form/FormValidate"
 
 const ValidatePage = props => {
     const { t } = props;
@@ -24,8 +24,7 @@ const ValidatePage = props => {
                 <div className="contact">
                     <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleValidate2")}</ParagraphTitle>
                     <Titleh3 data-aos="fade-in" data-aos-duration="1000" >{t("subtitleValidate2")}</Titleh3>
-                    <Form />
-
+                    <FormValidate />
 
                 </div>
             </div>

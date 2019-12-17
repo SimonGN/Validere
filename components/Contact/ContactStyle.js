@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const ValidateStyle = styled.div`
+const ContactStyle = styled.div`
      width:100%;
     .global{
         margin: 0 auto;
@@ -53,4 +53,4 @@ const ValidateStyle = styled.div`
 
 `;
 
-export { ValidateStyle };
+export { ContactStyle };
