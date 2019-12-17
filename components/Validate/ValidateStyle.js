@@ -22,15 +22,28 @@ const ValidateStyle = styled.div`
     }
        
     @media only screen and (min-width:415px) and (max-width:768px){
-
+        .global{
+            padding-top: 15%;
+        }
+        .column1{
+            width: 50%;
+        }
+        h2{
+                text-align:center;
+            }
     }
-    @media only screen and (min-width:769px) and (max-width:1024px){
+    @media only screen and (min-width:769px) {
+        h2{
+            text-align:center;
+        }
 
-    }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
-
-    }
-    @media only screen and (min-width:1441px){
+        .global{
+            padding-top: 13%;
+        }
+        .column1{
+            width: 50%;
+            margin-bottom: 16.5%;
+        }
 
     }
 

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 const FormStyle = styled.div`
-
     input{
         outline:none;
         border: none;
@@ -41,11 +40,16 @@ const FormStyle = styled.div`
     }
     
     @media only screen and (min-width:415px) and (max-width:768px){
+
         input, select{
             margin-bottom:8%;
             width:96%;
             padding-bottom:3%;
             padding-left:3%;
+            &:nth-child(2){
+            margin-left: 5%;
+
+        }
         }
         select{
             padding-left:2%;
@@ -54,9 +58,17 @@ const FormStyle = styled.div`
         .readmore{
             margin-bottom:20%;
         }
+        div{
+            display: flex;
+            
+        }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-
+            div{
+                display: flex;
+            }
+        
+  
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
 
