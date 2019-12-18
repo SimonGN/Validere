@@ -35,9 +35,8 @@ const Intro = props => {
                 </div>
 
                 <div className="button" data-aos="fade-in" data-aos-duration="1000">
-                    <a href={t("mailto")}> <Paragraph >{t("enlace1")}</Paragraph> </a>
-                    <a className="line"  href={t("mailto")}> <img src="/static/svg/line.svg" /> </a>
-
+                    <Link href="/validate"><Paragraph >{t("enlace1")}</Paragraph></Link>
+                    <Link href="/validate"><img  className="line"src="/static/svg/line.svg" /></Link>
                 </div>
 
             </div>
