@@ -146,7 +146,7 @@ nav{
         
         .logo{
             display:block;
-            width:15.5%;
+            width:15.53%;
         } 
         .simbolo, .hamburguer, .movil{
             display:none;

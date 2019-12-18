@@ -51,15 +51,16 @@ const FormStyle = styled.div`
 
         input, select, textarea{
             margin-bottom:8%;
-            width:96%;
-            padding-bottom:3%;
-            padding-left:3%;
+            width:100%;
+            padding-bottom:1.5%;
+            padding-left:2%;
             &:nth-child(2){
                 margin-left: 5%;
             }
         }
         textarea{
-            height:11px;
+            height:18px;
+            width:98%;
         }
         select{
             padding-left:2%;
@@ -76,15 +77,16 @@ const FormStyle = styled.div`
     @media only screen and (min-width:769px){
         input, select, textarea{
             margin-bottom:8%;
-            width:96%;
-            padding-bottom:2.5%;
-            padding-left:3%;
+            width:100%;
+            padding-bottom:1%;
+            padding-left:1.5%;
             &:nth-child(2){
                 margin-left: 5%;
             }  
         }      
         textarea{
-            height:11px;
+            height:18px;
+            width:98%;
         }
 
         select{
