@@ -1,5 +1,6 @@
 const express = require('express');
 const next = require('next');
+const bodyParser = require('body-parser');
 const nextI18NextMiddleware = require('next-i18next/middleware').default;
 
 const nextI18next = require('./i18n');
@@ -11,6 +12,15 @@ const handle = app.getRequestHandler();
 (async () => {
   await app.prepare();
   const server = express();
+  server.use(bodyParser.urlencoded({ extended: true }));
+  server.use(bodyParser.json());
+
+  server.post('/contacto', (req, res, next) => {
+    console.log(req.body);
+  });
+  server.post('/validate', (req, res, next) => {
+    console.log(req.body);
+  });
 
   nextI18next.i18n.languages = ['es', 'en'];
   nextI18next.i18n.language ? nextI18next.i18n.language = nextI18next.i18n.language : 'es';

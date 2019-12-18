@@ -11,21 +11,18 @@
     "country":"País",
     "university":"Nombre Universidad/Centro",
     "selectUniversity0": "Título Universitario",
-    "selectUniversity1": "Uno",
-    "selectUniversity2": "Dos",
-    "selectUniversity3": "Tres", 
+    "selectUniversity1": "Título Universitario",
+    "selectUniversity2": "Título No Universitario",
     "nameUniversity":"Nombre de la Titulación",
+    "degreeTime":"Duración de la titulación",
     "selectTime0":"Duración de 2 años",
-    "selectTime1":"Duración de 2 años",
-    "selectTime2":"Duración de 2 años",
+    "selectTime1":"Duración de 3 años",
+    "selectTime2":"Duración de 4 años",
+    "selectTime3":"Duración de +4 años",
     "level":"Nivel Académico",
 
     "alert1":"Campo obligatorio",
 
     "button":"Enviar"
 
-
-
-
-
-   }
+}

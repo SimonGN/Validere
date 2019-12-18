@@ -12,7 +12,7 @@ const FormContact = props => {
     return (
         <FormStyle>
             <Formik
-                initialValues={{ email: '', password: '', }}
+                initialValues={{ email: '', name: '', phone: '', comentarios: '' }}
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
@@ -25,7 +25,20 @@ const FormContact = props => {
                     return errors;
                 }}
                 onSubmit={(values) => {
-                   console.log(values)
+                    fetch("/contacto", {
+                        method: "POST",
+                        headers: {
+                            Accept: "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(values)
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                        })
+                        .catch(err => {
+                            console.log("Error while uploading the file: ", err);
+                        });
                 }}
             >
                 {({
@@ -68,12 +81,14 @@ const FormContact = props => {
                                     value={values.phone}
                                 />
                             </div>
-                            <textarea  
-                            data-aos="fade-in"
+                            <textarea
+                                data-aos="fade-in"
                                 placeholder={t("contactWrite")}
-                                name="comentarios">
-                                    
-                            </textarea>
+                                name="comentarios"
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.comentarios} />
+
 
                             <Button content={t("button")} type="submit" method={handleSubmit} />
 
