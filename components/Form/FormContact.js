@@ -24,11 +24,8 @@ const FormContact = props => {
                     }
                     return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                onSubmit={(values) => {
+                   console.log(values)
                 }}
             >
                 {({
@@ -41,7 +38,7 @@ const FormContact = props => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             <div data-aos="fade-in">
                                 <input
                                     placeholder={t("nameSurname")}
@@ -78,7 +75,7 @@ const FormContact = props => {
                                     
                             </textarea>
 
-                            <Button content={t("button")} />
+                            <Button content={t("button")} type="submit" method={handleSubmit} />
 
                         </form>
                     )}
