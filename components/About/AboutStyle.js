@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 
 const AboutStyle = styled.div`
+    .mobile{
+        display:none;
+    }
     overflow: hidden;
     a{
         text-decoration:none;

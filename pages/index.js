@@ -2,8 +2,7 @@ import Meta from "../components/Meta";
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
-
-
+import Mobile from "../components/Mobile/Mobile";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Intro from "../components/Intro/Intro";
@@ -67,9 +66,10 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Meta />
-        <Nav />
+        <Mobile/>
+        <Nav handleScroll={this.handleScroll}/>
         <Intro />
-        <ToDo />
+        <ToDo projectRef={e => (this.ref = e)}/>
         <Experiences />
         <Pictures />
         <Footer />

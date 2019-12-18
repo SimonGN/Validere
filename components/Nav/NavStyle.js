@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const NavStyle = styled.div`
-z-index:99;
+z-index:40;
 background-color:white 2%;
 position:fixed;
 width:100%;
@@ -146,7 +146,7 @@ nav{
         
         .logo{
             display:block;
-            width:12%;
+            width:15.5%;
         } 
         .simbolo, .hamburguer, .movil{
             display:none;

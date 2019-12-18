@@ -9,7 +9,7 @@ import Paragraph from "../../styles/fontsStyles/paragraph";
 import { withTranslation } from '../../i18n'
 
 const Nav = props => {
-    const { t } = props;
+    const { t, handleScroll } = props;
     const [ view, setView ] = useState(false);
     const handleOpen = () => {
         const value = !view;
@@ -26,7 +26,19 @@ const Nav = props => {
                     </div>
                 </div>
                 <nav>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
+                {handleScroll && (
+                    <Paragraph 
+                        size="13px" 
+                        onClick={() => handleScroll()} 
+                    >
+                       {t("nav1")}
+                    </Paragraph>
+                )}
+                {!handleScroll && (
+                    <Link as="/" href={{ pathname: "/", query: { scroll: true } }}>
+                        <Paragraph size="13px" >{t("nav1")}</Paragraph>
+                    </Link>
+                )}
                     <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
                     <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
                     <Link href="/validate"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>

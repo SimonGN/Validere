@@ -27,6 +27,7 @@ const TimeLine = props => {
                 </div>
 
             </div>
+            <div className="line" data-aos="fade-in"></div>
             <div className="box">
                 <Line data-aos="fade-in" />
                 <Circle data-aos="fade-in" className="circle2" />
@@ -38,6 +39,7 @@ const TimeLine = props => {
                 </div>
 
             </div>
+            <div className="line" data-aos="fade-in"></div>
             <div className="box">
                 <Line data-aos="fade-in" />
                 <Circle data-aos="fade-in" className="circle1" />
@@ -46,10 +48,9 @@ const TimeLine = props => {
                 </div>
                 <div data-aos="fade-right" className="imgs3">
                     <ParagraphTitle size="30px">{t("descriptionProcess5")}</ParagraphTitle> 
-        
                 </div>
-
             </div>
+            <div className="line" data-aos="fade-in"></div>
             <div className="box">
                 <Line data-aos="fade-in" />
                 <Circle data-aos="fade-in" className="circle2" />

@@ -2,6 +2,8 @@ import React from "react";
 
 import { AboutStyle } from "./AboutStyle";
 
+import Mobile from "../Mobile/Mobile"
+
 import TimeLine from "../TimeLine/TimeLine"
 
 import Paragraph from "../../styles/fontsStyles/paragraph";
@@ -16,6 +18,7 @@ const Abouttext = props => {
     const { t } = props;
     return (
         <AboutStyle >
+            <Mobile/>
             <div className="global">
                 <div className="column1">
                     <div className="about">

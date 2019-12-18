@@ -10,7 +10,7 @@ const TimeLineStyle = styled.div`
     .title{
         display: flex;
         justify-content: center;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     .imgs{
         display:none;
@@ -21,7 +21,8 @@ const TimeLineStyle = styled.div`
         margin: 0 auto;
         display:flex;
         flex-direction: column;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        margin-top:5%;
         vertical-align: baseline;
         justify-content: space-between;
         align-items: center;
@@ -42,6 +43,12 @@ const TimeLineStyle = styled.div`
     .imgs1, .imgs3{
         order:1;
     } 
+    .line{
+        width:2px;
+        height:80px;
+        background-color:black;
+        margin:0 auto;
+    }
     
     @media only screen and (min-width:415px) and (max-width:768px){
         width:90%;
@@ -95,6 +102,9 @@ const TimeLineStyle = styled.div`
             img{
                 width: 10%;
             }
+        }
+        .line{
+            display:none;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
@@ -150,8 +160,11 @@ const TimeLineStyle = styled.div`
                 width: 8%;
             }
         }
+        .line{
+            display:none;
+        }
     }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px){
         width:70%;
         margin:0 auto;
         .text1, .text2, .text3, .text4{
@@ -204,61 +217,11 @@ const TimeLineStyle = styled.div`
                 width: 7%;
             }
         }
+        .line{
+            display:none;
+        }
     }
-    @media only screen and (min-width:1441px){
-        width:70%;
-        margin:0 auto;
-        .text1, .text2, .text3, .text4{
-            width:40%;
-        }
-        .text1, .text3{
-            order:3;
-        }
-        .text2, .text4{
-            order:1;
-        }
-        .imgs1, .imgs3{
-            order:1;
-            margin: 0;
-            width: auto;
-        } 
-        .imgs2, .imgs4{
-            order:3;
-            width: auto;
-            margin: 0;
-            margin-right: 5%;
-        }
-        .imgs1, .imgs2, .imgs3, .imgs4{
-            margin: 0 auto;
-        }
-        .imgs1, .imgs2, .imgs4{
-            width: 20%;
-        }
-        .imgs3{
-            width: 41%;
-        }
 
-        .box{
-            width:85%;
-            margin: 0 auto;
-            margin-bottom: 10%;
-            position: relative;
-            flex-direction: row;
-            h3{
-                width:100%;
-            }
-            p{
-                width:100%;
-            }
-        }
-        .imgs{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 5%;
-            }
-        }
-    }
    
 `;
 

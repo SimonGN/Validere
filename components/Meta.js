@@ -25,6 +25,7 @@ const Meta = ( {title, content}) => {
         
         <title>{title || 'Validere'}</title>
       </Head>
+
       <style jsx global>{`
         @font-face {
           font-family: "Pressura";

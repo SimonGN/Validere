@@ -13,7 +13,7 @@ import { withTranslation } from '../../i18n'
 
 
 const Todo = props => {
-    const { t } = props;
+    const { t, projectRef } = props;
     return (
         <TodoStyle >
             <div className="colum1">
