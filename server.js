@@ -17,9 +17,11 @@ const handle = app.getRequestHandler();
 
   server.post('/contacto', (req, res, next) => {
     console.log(req.body);
+    res.status(200).json({message: 'Email sent'})
   });
   server.post('/validate', (req, res, next) => {
     console.log(req.body);
+    res.status(200).json({message: 'Email sent'})
   });
 
   nextI18next.i18n.languages = ['es', 'en'];

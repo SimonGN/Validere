@@ -11,6 +11,14 @@ import Button from "../Button/Button"
 const FormValidate = props => {
     const { t } = props;
 
+    const handleResponse = (status) => {
+        if(status === 200) {
+            //reset input and show ok status
+        } else {
+            //show errors
+        }
+    }
+    
     return (
         <FormStyle>
             <Formik
@@ -35,9 +43,7 @@ const FormValidate = props => {
                         },
                         body: JSON.stringify(values)
                     })
-                        .then(res => res.json())
-                        .then(data => {
-                        })
+                        .then(res => handleResponse(res.status))
                         .catch(err => {
                             console.log("Error while uploading the file: ", err);
                         });
