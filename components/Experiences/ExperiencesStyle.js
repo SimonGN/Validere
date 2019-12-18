@@ -84,9 +84,15 @@ const ExperiencesStyle = styled.div`
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         display: flex;
+        .sticky{
+            top:10%;
+            bottom: 0%;
+            position:sticky;
+        }
         .column1{
             width: 40%;
             padding-top: 10%;
+            padding-bottom: 10%;
         }
 
         .button{
@@ -105,10 +111,15 @@ const ExperiencesStyle = styled.div`
     @media only screen and (min-width:1025px) and (max-width:1440px){
         
         display: flex;
-
+        .sticky{
+            top:15%;
+            bottom: 0%;
+            position:sticky;
+        }
         .column1{
             width:35%;
             padding-top: 10%;
+            padding-bottom: 10%;
         }
 
         .button{
@@ -126,9 +137,16 @@ const ExperiencesStyle = styled.div`
     }
     @media only screen and (min-width:1441px){
         display: flex;
+        .sticky{
+            top:10%;
+            bottom: 0%;
+            position:sticky;
+        }
         .column1{
             width:30%;
             padding-top: 10%;
+            padding-bottom: 10%;
+
         }
 
         .button{
