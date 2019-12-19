@@ -8,13 +8,13 @@ export const CookieWrapper = styled.div`
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   display: ${props => (props.display ? props.display : "flex")};
+  
   justify-content: space-around;
   transition: all 1s ease 0s;
   padding-top: 1em;
   z-index: 3;
   
-
-  a {
+  a{
     color: ${props => (props.color ? props.color : "#D6D6D6")};
   }
   a:visited {
@@ -31,15 +31,6 @@ export const CookieWrapper = styled.div`
   .text{
     width:90%;
     margin-bottom:8%;
-  }
-
-
-   
-  }
-  .logo {
-    height: 50px;
-    object-fit: contain;
-    display: none;
   }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .cookies-content{
@@ -73,5 +64,7 @@ export const CookieWrapper = styled.div`
       margin-bottom:0;
       margin-right: 8%;
     }
+
   }
+
 `;

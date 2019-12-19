@@ -17,6 +17,7 @@ const ButtonStyle = styled.div`
     border-radius: 2px;
     display:flex;
     justify-content: center;
+    align-items:center;
     cursor:pointer;
     p{
         margin-bottom:0;

@@ -10,12 +10,12 @@ class Cookies extends React.Component {
   }
 
   componentDidMount() {
-    const display = localStorage.getItem('displayVasalto')
+    const display = localStorage.getItem('displayValidere')
     this.setState({... this.state , display})
   }
   changeDisplay = () => {
-    localStorage.setItem('displayVasalto', 'none')
-    const display = localStorage.getItem('displayVasalto')
+    localStorage.setItem('displayValidere', 'none')
+    const display = localStorage.getItem('displayValidere')
     this.setState({... this.state , display})
   };
   render() {
@@ -34,7 +34,7 @@ class Cookies extends React.Component {
               política de privacidad.
             </a>
           </Paragraph>
-          <Button onClick={() => this.changeDisplay()} content="ENTENDIDO" ></Button>
+          <Button content="ENTENDIDO" style="text-align: center;" method={() => this.changeDisplay()}></Button>
         </div>
       </CookieWrapper>
     );
