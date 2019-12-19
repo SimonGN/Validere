@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { NavStyle } from "./NavStyle";
+
 import Paragraph from "../../styles/fontsStyles/paragraph";
 
 
@@ -11,10 +12,15 @@ import { withTranslation } from '../../i18n'
 const Nav = props => {
     const { t, handleScroll } = props;
     const [ view, setView ] = useState(false);
+    const [ url, setUrl ] = useState("");
     const handleOpen = () => {
         const value = !view;
         setView(value);
     }
+    useEffect(() => {
+        setUrl(window.location.href)
+      }, [])
+
     return (
         <NavStyle view={view}>
             <header>
@@ -36,13 +42,13 @@ const Nav = props => {
                 )}
                 {!handleScroll && (
                     <Link as="/" href={{ pathname: "/", query: { scroll: true } }}>
-                        <Paragraph size="13px" >{t("nav1")}</Paragraph>
+                        <Paragraph size="13px" capital={url.includes('about') ? 'uppercase' : ''}>{t("nav1")}</Paragraph>
                     </Link>
                 )}
-                    <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
+                    <Link href="/about"><Paragraph size="13px" capital={url.includes('about') ? 'uppercase' : ''}>{t("nav2")}</Paragraph></Link>
                     <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
-                    <Link href="/validate"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>
-                    <Link href="/contact"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
+                    <Link href="/validate"><Paragraph size="13px" capital={url.includes('validate') ? 'uppercase' : ''}>{t("nav3")}</Paragraph></Link>
+                    <Link href="/contact"><Paragraph size="13px" capital={url.includes('contact') ? 'uppercase' : ''}>{t("nav4")}</Paragraph></Link>
                 </nav>
             </header>
 

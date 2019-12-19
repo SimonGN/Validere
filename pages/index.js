@@ -2,6 +2,7 @@ import Meta from "../components/Meta";
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
+import Cookies from "../components/Cookies/Cookies"
 import Mobile from "../components/Mobile/Mobile";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
@@ -66,6 +67,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Meta />
+        <Cookies />
         <Mobile/>
         <Nav handleScroll={this.handleScroll}/>
         <Intro />

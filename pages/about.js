@@ -2,7 +2,7 @@ import Meta from "../components/Meta";
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
-
+import Mobile from "../components/Mobile/Mobile"
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Abouttext from "../components/About/About";
@@ -63,6 +63,7 @@ class About extends React.Component {
     return (
       <React.Fragment>
         <Meta title="Validere – About"/>
+        <Mobile />
         <Nav />
         <Abouttext />
         <Footer />

@@ -11,7 +11,7 @@ const Button = props => {
         backgroundColor={props.backgroundColor}
         className="readmore"
         onClick={props.method ? props.method : ''}
-        data-aos="fade-in"
+        // data-aos="fade-in"
          >
             <Paragraph color={props.color} size={props.size}> {props.content}</Paragraph>
           

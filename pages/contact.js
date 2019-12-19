@@ -2,7 +2,7 @@ import Meta from "../components/Meta";
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
-
+import Mobile from "../components/Mobile/Mobile"
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import ContactPage from "../components/Contact/Contact";
@@ -63,6 +63,7 @@ class Contact extends React.Component {
     return (
       <React.Fragment>
         <Meta title="Validere – Contact"/>
+        <Mobile/>
         <Nav />
         <ContactPage />
         <Footer />

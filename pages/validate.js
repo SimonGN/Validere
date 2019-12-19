@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import ValidatePage from "../components/Validate/Validate";
-
+import Mobile from "../components/Mobile/Mobile"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -63,6 +63,7 @@ class Validate extends React.Component {
     return (
       <React.Fragment>
         <Meta title="Validere – Validate"/>
+        <Mobile/>
         <Nav />
         <ValidatePage />
         <Footer />
