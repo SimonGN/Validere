@@ -10,6 +10,7 @@ class MyApp extends App {
      
         <Container>
           <Component {...pageProps} />
+          <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch"></script>
         </Container>
   
     );

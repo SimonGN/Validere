@@ -1,4 +1,20 @@
 {
-    "presets": ["next/babel"],
-    "plugins": [["styled-components", { "ssr": true }]]
-  }
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "useBuiltIns": "entry"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}

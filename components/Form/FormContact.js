@@ -9,10 +9,18 @@ import Button from "../Button/Button"
 const FormContact = props => {
     const { t } = props;
 
+    const handleResponse = (status) => {
+        if(status === 200) {
+            //reset input and show ok status
+        } else {
+            //show errors
+        }
+    }
+
     return (
         <FormStyle>
             <Formik
-                initialValues={{ email: '', password: '', }}
+                initialValues={{ email: '', name: '', phone: '', comentarios: '' }}
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
@@ -24,11 +32,19 @@ const FormContact = props => {
                     }
                     return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                onSubmit={(values) => {
+                    fetch("/contacto", {
+                        method: "POST",
+                        headers: {
+                            Accept: "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(values)
+                    })
+                        .then(res => handleResponse(res.status))
+                        .catch(err => {
+                            console.log("Error while uploading the file: ", err);
+                        });
                 }}
             >
                 {({
@@ -41,7 +57,7 @@ const FormContact = props => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             <div data-aos="fade-in">
                                 <input
                                     placeholder={t("nameSurname")}
@@ -71,14 +87,16 @@ const FormContact = props => {
                                     value={values.phone}
                                 />
                             </div>
-                            <textarea  
-                            data-aos="fade-in"
+                            <textarea
+                                data-aos="fade-in"
                                 placeholder={t("contactWrite")}
-                                name="comentarios">
-                                    
-                            </textarea>
+                                name="comentarios"
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.comentarios} />
 
-                            <Button content={t("button")} />
+
+                            <Button content={t("button")} type="submit" method={handleSubmit} />
 
                         </form>
                     )}

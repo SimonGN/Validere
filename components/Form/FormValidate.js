@@ -11,10 +11,18 @@ import Button from "../Button/Button"
 const FormValidate = props => {
     const { t } = props;
 
+    const handleResponse = (status) => {
+        if(status === 200) {
+            //reset input and show ok status
+        } else {
+            //show errors
+        }
+    }
+    
     return (
         <FormStyle>
             <Formik
-                initialValues={{ email: '', password: '', }}
+                initialValues={{ email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}`}}
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
@@ -26,11 +34,19 @@ const FormValidate = props => {
                     }
                     return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                onSubmit={(values) => {
+                    fetch("/validate", {
+                        method: "POST",
+                        headers: {
+                            Accept: "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(values)
+                    })
+                        .then(res => handleResponse(res.status))
+                        .catch(err => {
+                            console.log("Error while uploading the file: ", err);
+                        });
                 }}
             >
                 {({
@@ -43,7 +59,7 @@ const FormValidate = props => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             <div data-aos="fade-in">
                                 <input
                                     placeholder={t("nameSurname")}
@@ -92,11 +108,14 @@ const FormValidate = props => {
                                 />
                             </div>
                             <div data-aos="fade-in">
-                                <select>
-                                    <option>{t("selectUniversity0")}</option>
-                                    <option>{t("selectUniversity1")}</option>
-                                    <option>{t("selectUniversity2")}</option>
-                                    <option>{t("selectUniversity3")}</option>
+                                <select 
+                                 onChange={handleChange}
+                                 onBlur={handleBlur}
+                                 value={values.degreeType}
+                                 name="degreeType"
+                                >                
+                                    <option value={t("selectUniversity1")}>{t("selectUniversity1")}</option>
+                                    <option value={t("selectUniversity2")}>{t("selectUniversity2")}</option>
                                 </select>
                                 <input
                                     placeholder={t("nameUniversity")}
@@ -108,11 +127,16 @@ const FormValidate = props => {
                                 />
                             </div>
                             <div data-aos="fade-in">
-                                <select>
-                                    <option>{t("nameUniversity")}</option>
-                                    <option>{t("selectTime0")}</option>
-                                    <option>{t("selectTime1")}</option>
-                                    <option>{t("selectTime2")}</option>
+                                <select
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.degreeTime}
+                                name="degreeTime"
+                                >                        
+                                    <option value={t("selectTime0")}>{t("selectTime0")}</option>
+                                    <option value={t("selectTime1")}>{t("selectTime1")}</option>
+                                    <option value={t("selectTime2")}>{t("selectTime2")}</option>
+                                    <option value={t("selectTime3")}>{t("selectTime3")}</option>
                                 </select>
                                 <input
                                     placeholder={t("level")}
@@ -123,7 +147,7 @@ const FormValidate = props => {
                                     value={values.level}
                                 />
                             </div>
-                            <Button content={t("button")} />
+                            <Button content={t("button")} method={handleSubmit}/>
 
                         </form>
                     )}
