@@ -1,7 +1,7 @@
 import React from "react";
 import { FormStyle } from "./FormStyle";
 
-
+import Error from "../../styles/fontsStyles/error"
 
 import { withTranslation } from '../../i18n'
 import { Formik } from 'formik';
@@ -12,25 +12,32 @@ const FormValidate = props => {
     const { t } = props;
 
     const handleResponse = (status) => {
-        if(status === 200) {
+        if (status === 200) {
             //reset input and show ok status
         } else {
             //show errors
         }
     }
-    
+
+
     return (
         <FormStyle>
             <Formik
-                initialValues={{ email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}`}}
+                initialValues={{ email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}` }}
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
-                        errors.email = 'Required';
+                        errors.email = 'Información necesaria';
+                        errors.name = 'Necesitamos tu nombre para dirigirnos a tí';
+                        errors.phone = 'Necesitamos tu teléfono para poderte llamar';
+                        errors.country = 'Información necesaria';
+                        errors.university = 'Información necesaria';
+                        errors.nameUniversity = 'Información necesaria';
+                        errors.level = 'Información necesaria';
                     } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                     ) {
-                        errors.email = 'Invalid email address';
+                        errors.email = 'necesitamos tu email para ponernos en contacto contigo';
                     }
                     return errors;
                 }}
@@ -61,98 +68,126 @@ const FormValidate = props => {
                 }) => (
                         <form>
                             <div data-aos="fade-in">
-                                <input
-                                    placeholder={t("nameSurname")}
-                                    type="text"
-                                    name="name"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.name}
-                                />
+                                <div className="error">
+                                    <input
+                                        placeholder={t("nameSurname")}
+                                        type="text"
+                                        name="name"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.name}
+                                        required
+                                    />
+                                    <Error>{errors.name && touched.name && errors.name}</Error>
+                                </div>
                             </div>
 
                             <div data-aos="fade-in">
-                                <input
-                                    placeholder={t("email")}
-                                    type="text"
-                                    name="email"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.email}
-                                />
-                                <input
-                                    placeholder={t("phone")}
-                                    type="text"
-                                    name="phone"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.phone}
-                                />
+                                <div className="error">
+                                    <input
+                                        placeholder={t("email")}
+                                        type="text"
+                                        name="email"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.email}
+                                    />
+                                    <Error>{errors.email && touched.email && errors.email}</Error>
+                                </div>
+                                <div className="error">
+                                    <input
+                                        placeholder={t("phone")}
+                                        type="text"
+                                        name="phone"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.phone}
+                                    />
+                                    <Error>{errors.phone && touched.phone && errors.phone}</Error>
+                                </div>
+
                             </div>
                             <div data-aos="fade-in">
-                                <input
-                                    placeholder={t("country")}
-                                    type="text"
-                                    name="country"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.country}
-                                />
-                                <input
-                                    placeholder={t("university")}
-                                    type="text"
-                                    name="university"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.university}
-                                />
+                                <div className="error">
+                                    <input
+                                        placeholder={t("country")}
+                                        type="text"
+                                        name="country"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.country}
+                                    />
+                                    <Error>{errors.country && touched.country && errors.country}</Error>
+                                </div>
+                                <div className="error">
+                                    <input
+                                        placeholder={t("university")}
+                                        type="text"
+                                        name="university"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.university}
+                                    />
+                                    <Error>{errors.university && touched.university && errors.university}</Error>
+                                </div>
                             </div>
                             <div data-aos="fade-in">
-                                <select 
-                                 onChange={handleChange}
-                                 onBlur={handleBlur}
-                                 value={values.degreeType}
-                                 name="degreeType"
-                                >                
-                                    <option value={t("selectUniversity1")}>{t("selectUniversity1")}</option>
-                                    <option value={t("selectUniversity2")}>{t("selectUniversity2")}</option>
-                                </select>
-                                <input
-                                    placeholder={t("nameUniversity")}
-                                    type="text"
-                                    name="nameUniversity"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.nameUniversity}
-                                />
+                                <div className="error">
+                                    <select
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.degreeType}
+                                        name="degreeType"
+                                    >
+                                        <option value={t("selectUniversity1")}>{t("selectUniversity1")}</option>
+                                        <option value={t("selectUniversity2")}>{t("selectUniversity2")}</option>
+                                    </select>
+                                </div>
+                                <div className="error">
+                                    <input
+                                        placeholder={t("nameUniversity")}
+                                        type="text"
+                                        name="nameUniversity"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.nameUniversity}
+                                    />
+                                    <Error>{errors.nameUniversity && touched.nameUniversity && errors.nameUniversity}</Error>
+                                </div>
                             </div>
+
                             <div data-aos="fade-in">
-                                <select
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.degreeTime}
-                                name="degreeTime"
-                                >                        
-                                    <option value={t("selectTime0")}>{t("selectTime0")}</option>
-                                    <option value={t("selectTime1")}>{t("selectTime1")}</option>
-                                    <option value={t("selectTime2")}>{t("selectTime2")}</option>
-                                    <option value={t("selectTime3")}>{t("selectTime3")}</option>
-                                </select>
-                                <input
-                                    placeholder={t("level")}
-                                    type="text"
-                                    name="level"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.level}
-                                />
+                                <div className="error">
+                                    <select
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.degreeTime}
+                                        name="degreeTime"
+                                    >
+                                        <option value={t("selectTime0")}>{t("selectTime0")}</option>
+                                        <option value={t("selectTime1")}>{t("selectTime1")}</option>
+                                        <option value={t("selectTime2")}>{t("selectTime2")}</option>
+                                        <option value={t("selectTime3")}>{t("selectTime3")}</option>
+                                    </select>
+                                </div>
+                                <div className="error">
+                                    <input
+                                        placeholder={t("level")}
+                                        type="text"
+                                        name="level"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.level}
+                                    />
+                                    <Error>{errors.level && touched.level && errors.level}</Error>
+                                </div>
                             </div>
-                            <Button content={t("button")} method={handleSubmit}/>
+                            <Button content={t("button")} method={handleSubmit} disabled={isSubmitting} />
 
                         </form>
                     )}
             </Formik>
-        </FormStyle>
+        </FormStyle >
     )
 
 }

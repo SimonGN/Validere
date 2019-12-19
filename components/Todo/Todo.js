@@ -15,7 +15,7 @@ import { withTranslation } from '../../i18n'
 const Todo = props => {
     const { t, projectRef } = props;
     return (
-        <TodoStyle >
+        <TodoStyle ref={projectRef}>
             <div className="colum1">
                 <div className="box1">
                     <div className="queHacemos" data-aos="fade-in" data-aos-duration="1000">

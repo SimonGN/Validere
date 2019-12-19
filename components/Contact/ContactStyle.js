@@ -41,7 +41,7 @@ const ContactStyle = styled.div`
             padding-top: 13%;
         }
         .column1{
-            width: 50%;
+            width: 42%;
             margin-bottom: 16.5%;
         }
         .contact{

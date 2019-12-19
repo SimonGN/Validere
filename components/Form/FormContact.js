@@ -4,13 +4,15 @@ import { FormStyle } from "./FormStyle";
 import { withTranslation } from '../../i18n'
 import { Formik } from 'formik';
 
+import Error from "../../styles/fontsStyles/error"
+
 import Button from "../Button/Button"
 
 const FormContact = props => {
     const { t } = props;
 
     const handleResponse = (status) => {
-        if(status === 200) {
+        if (status === 200) {
             //reset input and show ok status
         } else {
             //show errors
@@ -24,7 +26,9 @@ const FormContact = props => {
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
-                        errors.email = 'Required';
+                        errors.email = 'Información necesaria';
+                        errors.name = 'Necesitamos tu nombre para dirigirnos a tí';
+                        errors.phone = 'Necesitamos tu teléfono para poderte llamar';
                     } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                     ) {
@@ -59,42 +63,53 @@ const FormContact = props => {
                 }) => (
                         <form>
                             <div data-aos="fade-in">
-                                <input
-                                    placeholder={t("nameSurname")}
-                                    type="text"
-                                    name="name"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.name}
-                                />
+                                <div className="error">
+                                    <input
+                                        placeholder={t("nameSurname")}
+                                        type="text"
+                                        name="name"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.name}
+                                    />
+                                    <Error>{errors.name && touched.name && errors.name}</Error>
+                                </div>
                             </div>
 
                             <div data-aos="fade-in">
-                                <input
-                                    placeholder={t("email")}
-                                    type="text"
-                                    name="email"
+                                <div className="error">
+                                    <input
+                                        placeholder={t("email")}
+                                        type="text"
+                                        name="email"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.email}
+                                    />
+                                    <Error>{errors.email && touched.email && errors.email}</Error>
+                                </div>
+                                <div className="error">
+                                    <input
+                                        placeholder={t("phone")}
+                                        type="text"
+                                        name="phone"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.phone}
+                                    />
+                                    <Error>{errors.phone && touched.phone && errors.phone}</Error>
+                                </div>
+                            </div>
+                            <div className="error">
+                                <textarea
+                                    data-aos="fade-in"
+                                    placeholder={t("contactWrite")}
+                                    name="comentarios"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    value={values.email}
-                                />
-                                <input
-                                    placeholder={t("phone")}
-                                    type="text"
-                                    name="phone"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.phone}
+                                    value={values.comentarios}
                                 />
                             </div>
-                            <textarea
-                                data-aos="fade-in"
-                                placeholder={t("contactWrite")}
-                                name="comentarios"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.comentarios} />
-
 
                             <Button content={t("button")} type="submit" method={handleSubmit} />
 
