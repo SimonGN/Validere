@@ -4,11 +4,9 @@ export const CookieWrapper = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:white 0.2%;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color:rgba(0,0,0, 0.6);
   display: ${props => (props.display ? props.display : "flex")};
-  
+  border-radius: 2px;
   justify-content: space-around;
   transition: all 1s ease 0s;
   padding-top: 1em;
@@ -55,6 +53,7 @@ export const CookieWrapper = styled.div`
     }
   }
   @media only screen and (min-width: 1025px) {
+    width: 63%;
     .cookies-content{
       flex-direction:row;
       margin-bottom:2%;
