@@ -5,7 +5,7 @@ const ButtonStyle = styled.div`
     margin:0 auto;
     width:70%;
     padding:14px 25px;
-    display: inline-block;    
+    /* display: inline-block;     */
     background: rgba(255,194,158,1);
     background: -moz-linear-gradient(left, rgba(255,194,158,1) 0%, rgba(156,232,199,1) 51%, rgba(186,181,232,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,194,158,1)), color-stop(51%, rgba(156,232,199,1)), color-stop(100%, rgba(186,181,232,1)));
@@ -28,15 +28,12 @@ const ButtonStyle = styled.div`
         width:40%;
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        display:inline-block;
         width: 30%;
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        display:inline-block;
         width: 30%;
     }
     @media only screen and (min-width:1441px){
-        display:inline-block;
         width: 30%;
     }
 

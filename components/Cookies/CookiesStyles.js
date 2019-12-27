@@ -4,21 +4,18 @@ export const CookieWrapper = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:white 0.2%;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color:white;
   display: ${props => (props.display ? props.display : "flex")};
-  
   justify-content: space-around;
   transition: all 1s ease 0s;
   padding-top: 1em;
   z-index: 3;
   
   a{
-    color: ${props => (props.color ? props.color : "#D6D6D6")};
+    color: ${props => (props.color ? props.color : "black")};
   }
   a:visited {
-    color: ${props => (props.color ? props.color : "#D6D6D6")};
+    color: ${props => (props.color ? props.color : "black")};
   }
 
   .cookies-content {

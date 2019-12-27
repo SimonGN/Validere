@@ -27,7 +27,7 @@ class Cookies extends React.Component {
         display={this.state.display}
       >
         <div className="cookies-content">
-          <Paragraph size="13px" className="text" color="#D6D6D6">
+          <Paragraph size="13px" className="text">
             Este sitio web utiliza cookies para garantizar que obtenga la mejor
             experiencia en nuestro sitio web. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra {" "}
             <a href="/static/documents/ProteccionDeDatos.pdf" target="_blank">
