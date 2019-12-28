@@ -30,8 +30,18 @@ const handle = app.getRequestHandler();
       .catch(() => res.status(500).json({ message: 'Error Servidor' }));
   });
   server.post('/validate', (req, res, next) => {
-    console.log(req.body);
-    res.status(200).json({message: 'Email sent'})
+    const { email, name, phone, country, university, nameUniversity, level, degreeTime, degreeType } = req.body;  
+  // degreeTime: 'Duración de 2 años'
+    transport
+      .sendMail({
+        from: 'Validere <info@validere.es>',
+        to: 'info@validere.es',
+        subject: 'Validación',
+        text: '',
+        html: `<html><p>Nombre: ${name}</p><p>Email: ${email}</p><p>Teléfono: ${phone}</p><p>País: ${country}</p><p>Universidad: ${university}</p><p>Nombre del título: ${nameUniversity}</p><p>Nivel: ${level}</p><p>Tipo: ${degreeType}</p><p>Duración: ${degreeTime}</p></html>`,
+      })
+      .then(() => res.status(200).json({ message: 'Email send' }))
+      .catch(() => res.status(500).json({ message: 'Error Servidor' }));
   });
 
   nextI18next.i18n.languages = ['es', 'en'];
