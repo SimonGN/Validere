@@ -13,9 +13,9 @@ backdrop-filter: blur(10px);
     100%{opacity:1}
 }
 
-p:active{
+/* p:active{
     text-transform:uppercase;
-}
+} */
 
 .movil{ 
     width:90%;
