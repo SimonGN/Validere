@@ -1,6 +1,7 @@
 const express = require('express');
 const next = require('next');
 const bodyParser = require('body-parser');
+const transport = require('./config/nodemailer.config');
 const nextI18NextMiddleware = require('next-i18next/middleware').default;
 
 const nextI18next = require('./i18n');
@@ -16,12 +17,31 @@ const handle = app.getRequestHandler();
   server.use(bodyParser.json());
 
   server.post('/contacto', (req, res, next) => {
-    console.log(req.body);
-    res.status(200).json({message: 'Email sent'})
+    const { name, email, phone, comentarios } = req.body;
+    transport
+      .sendMail({
+        from: 'Validere <info@validere.es>',
+        to: 'info@validere.es',
+        subject: 'Contacto',
+        text: '',
+        html: `<html><p>Nombre: ${name}</p><p>Email: ${email}</p><p>Teléfono: ${phone}</p><p>Comentarios: ${comentarios}</p></html>`,
+      })
+      .then(() => res.status(200).json({ message: 'Email send' }))
+      .catch(() => res.status(500).json({ message: 'Error Servidor' }));
   });
   server.post('/validate', (req, res, next) => {
-    console.log(req.body);
-    res.status(200).json({message: 'Email sent'})
+    const { email, name, phone, country, university, nameUniversity, level, degreeTime, degreeType } = req.body;  
+  // degreeTime: 'Duración de 2 años'
+    transport
+      .sendMail({
+        from: 'Validere <info@validere.es>',
+        to: 'info@validere.es',
+        subject: 'Validación',
+        text: '',
+        html: `<html><p>Nombre: ${name}</p><p>Email: ${email}</p><p>Teléfono: ${phone}</p><p>País: ${country}</p><p>Universidad: ${university}</p><p>Nombre del título: ${nameUniversity}</p><p>Nivel: ${level}</p><p>Tipo: ${degreeType}</p><p>Duración: ${degreeTime}</p></html>`,
+      })
+      .then(() => res.status(200).json({ message: 'Email send' }))
+      .catch(() => res.status(500).json({ message: 'Error Servidor' }));
   });
 
   nextI18next.i18n.languages = ['es', 'en'];

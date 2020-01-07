@@ -3,7 +3,7 @@ import React from "react";
 import Paragraph from "../../styles/fontsStyles/paragraph";
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle"
 
-import { TimeLineStyle, Line, Circle } from "./timeLineStyle";
+import { TimeLineStyle, Line, Circle } from "./TimeLineStyle";
 
 import { withTranslation } from '../../i18n'
 
