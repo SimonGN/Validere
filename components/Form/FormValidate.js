@@ -11,13 +11,46 @@ import Button from "../Button/Button"
 const FormValidate = props => {
     const { t } = props;
 
-    const handleResponse = (status) => {
-        if (status === 200) {
-            //reset input and show ok status
-        } else {
-            //show errors
-        }
-    }
+    // const handleResponse = (status) => {
+    //     if (status === 200) {
+    //         this.setState({ ...this.state, send: true, loading: false }, () => {
+    //             setTimeout(() => {
+    //                 this.resetForm();
+    //             }, 2000);
+    //         });
+    //     } else {
+    //         this.setState({ ...this.state, error: true, loading: false }, () => {
+    //             setTimeout(() => {
+    //                 this.resetForm(true);
+    //             }, 2000);
+    //         });
+    //     }
+    // };
+    // resetForm = (error = false) => {
+    //     const data = {
+    //         email: "",
+    //         name: "",
+    //         phone: "",
+    //         country: "",
+    //         university: "",
+    //         nameUniversity: "",
+    //         level: ""
+    //     };
+    //     const errors = {
+    //         email: true,
+    //         name: true,
+    //         phone: true,
+    //         country: true,
+    //         university: true,
+    //         nameUniversity: true,
+    //         level: true
+    //     };
+    //     if (!error) {
+    //         this.setState({ ...this.state, send: true, check: false, data, errors });
+    //     } else {
+    //         this.setState({ ...this.state, error: true, check: false, data, errors });
+    //     }
+    // };
 
 
     return (
@@ -182,7 +215,39 @@ const FormValidate = props => {
                                     <Error>{errors.level && touched.level && errors.level}</Error>
                                 </div>
                             </div>
-                            <Button content={t("button")} method={handleSubmit} disabled={isSubmitting} />
+                            {!send && !error && !loading && (
+                                <Button
+                                    type="submit"
+                                    className="send-button"
+                                    content={t("button")}
+                                    disabled={this.controlForm()}
+                                >
+                                    Enviar
+                                </Button>
+                            )}
+                            {loading && (
+                                <Button
+                                    type="submit"
+                                    className="send-button"
+                                    disabled={true}
+                                >
+                                    Cargando...
+                    </Button>
+                            )}
+                            {send && (
+                                <Button className="success-button" disabled={true}>
+                                    Solicitud enviada
+                    </Button>
+                            )}
+
+                            {error && (
+                                <Button className="error-button" disabled={true}>
+                                    Se ha producido un error
+                    </Button>
+                            )}
+
+
+                            {/* <Button content={t("button")} method={handleSubmit} disabled={isSubmitting} /> */}
 
                         </form>
                     )}

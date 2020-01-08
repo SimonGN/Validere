@@ -22,17 +22,17 @@ const Abouttext = props => {
             <div className="global">
                 <div className="column1">
                     <div className="about">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleAbout")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout1")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout2")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionAbout3")}</Paragraph>
+                        <ParagraphTitle data-aos="fade-in">{t("titleAbout")}</ParagraphTitle>
+                        <Paragraph data-aos="fade-in">{t("descriptionAbout1")}</Paragraph>
+                        <Paragraph data-aos="fade-in">{t("descriptionAbout2")}</Paragraph>
+                        <Paragraph data-aos="fade-in">{t("descriptionAbout3")}</Paragraph>
                     </div>
                     <div className="mision">
-                        <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("titleMision")}</ParagraphTitle>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision1")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision2")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision3")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("descriptionMision4")}</Paragraph>
+                        <ParagraphTitle data-aos="fade-in">{t("titleMision")}</ParagraphTitle>
+                        <Paragraph data-aos="fade-in">{t("descriptionMision1")}</Paragraph>
+                        <Paragraph data-aos="fade-in">{t("descriptionMision2")}</Paragraph>
+                        <Paragraph data-aos="fade-in">{t("descriptionMision3")}</Paragraph>
+                        <Paragraph data-aos="fade-in">{t("descriptionMision4")}</Paragraph>
                     </div>
 
                 </div>
