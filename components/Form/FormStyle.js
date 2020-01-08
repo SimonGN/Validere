@@ -26,7 +26,7 @@ p{
         transition-timing-function: ease-in-put;
         
         &:focus{
-            color:#9CE8C7;
+            color:black;
         }
     }
     input, select,textarea{

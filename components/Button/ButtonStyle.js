@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const ButtonStyle = styled.div`
+const ButtonStyle = styled.button`
     margin:0 auto;
     width:70%;
     padding:14px 25px;

@@ -13,7 +13,7 @@ const FormContact = props => {
 
     const handleResponse = (status) => {
         if (status === 200) {
-            //reset input and show ok status
+            this.setState({ send: true })
         } else {
             //show errors
         }
@@ -27,18 +27,18 @@ const FormContact = props => {
                     const errors = {};
                     if (!values.email) {
                         errors.email = 'Necesitamos tu email para ponernos en contacto contigo';
-                      } else if (
+                    } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                      ) {
+                    ) {
                         errors.email = 'Tu email no es correcto';
-                      }
-                      if (!values.name) {
+                    }
+                    if (!values.name) {
                         errors.name = 'Información necesaria';
-                      }
-                      if (!values.phone) {
+                    }
+                    if (!values.phone) {
                         errors.phone = 'Información necesaria';
-                      }
-                      
+                    }
+
                     return errors;
                 }}
                 onSubmit={(values) => {
@@ -76,6 +76,7 @@ const FormContact = props => {
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.name}
+                                        required
                                     />
                                     <Error>{errors.name && touched.name && errors.name}</Error>
                                 </div>
@@ -90,6 +91,7 @@ const FormContact = props => {
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.email}
+                                        required
                                     />
                                     <Error>{errors.email && touched.email && errors.email}</Error>
                                 </div>
@@ -101,6 +103,7 @@ const FormContact = props => {
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.phone}
+                                        required
                                     />
                                     <Error>{errors.phone && touched.phone && errors.phone}</Error>
                                 </div>
@@ -113,6 +116,7 @@ const FormContact = props => {
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.comentarios}
+                                    required
                                 />
                             </div>
 

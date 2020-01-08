@@ -4,17 +4,15 @@ import { ButtonStyle } from "./ButtonStyle";
 import Paragraph from "../../styles/fontsStyles/paragraph";
 
 const Button = props => {
-
-
     return (
-        <ButtonStyle 
-        backgroundColor={props.backgroundColor}
-        className="readmore"
-        onClick={props.method ? props.method : ''}
+        <ButtonStyle
+            backgroundColor={props.backgroundColor}
+            className="readmore"
+            onClick={props.method ? (event) => { event.preventDefault(); props.method } : ''}
+            type={props.type}
         // data-aos="fade-in"
-         >
+        >
             <Paragraph color={props.color} size={props.size}> {props.content}</Paragraph>
-          
         </ButtonStyle>
     );
 };
