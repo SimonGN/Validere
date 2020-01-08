@@ -24,21 +24,34 @@ const FormValidate = props => {
         <FormStyle>
             <Formik
                 initialValues={{ email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}` }}
+                
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
-                        errors.email = 'Información necesaria';
-                        errors.name = 'Necesitamos tu nombre para dirigirnos a tí';
-                        errors.phone = 'Necesitamos tu teléfono para poderte llamar';
-                        errors.country = 'Información necesaria';
-                        errors.university = 'Información necesaria';
-                        errors.nameUniversity = 'Información necesaria';
-                        errors.level = 'Información necesaria';
-                    } else if (
+                        errors.email = 'Necesitamos tu email para ponernos en contacto contigo';
+                      } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                    ) {
-                        errors.email = 'necesitamos tu email para ponernos en contacto contigo';
-                    }
+                      ) {
+                        errors.email = 'Tu email no es correcto';
+                      }
+                      if (!values.name) {
+                        errors.name = 'Información necesaria';
+                      }
+                      if (!values.phone) {
+                        errors.phone = 'Información necesaria';
+                      }
+                      if (!values.country) {
+                        errors.country = 'Información necesaria';
+                      }
+                      if (!values.university) {
+                        errors.university = 'Información necesaria';
+                      }
+                      if (!values.nameUniversity) {
+                        errors.nameUniversity = 'Información necesaria';
+                      }
+                      if (!values.level) {
+                        errors.level = 'Información necesaria';
+                      }
                     return errors;
                 }}
                 onSubmit={(values) => {
