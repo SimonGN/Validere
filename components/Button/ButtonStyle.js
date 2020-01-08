@@ -22,6 +22,7 @@ const ButtonStyle = styled.div`
     p{
         margin-bottom:0;
         text-transform: capitalize;
+        text-align:center;
     }
 
     @media only screen and (min-width:415px) and (max-width:768px){

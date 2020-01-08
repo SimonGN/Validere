@@ -26,14 +26,19 @@ const FormContact = props => {
                 validate={values => {
                     const errors = {};
                     if (!values.email) {
-                        errors.email = 'Información necesaria';
-                        errors.name = 'Necesitamos tu nombre para dirigirnos a tí';
-                        errors.phone = 'Necesitamos tu teléfono para poderte llamar';
-                    } else if (
+                        errors.email = 'Necesitamos tu email para ponernos en contacto contigo';
+                      } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                    ) {
-                        errors.email = 'Invalid email address';
-                    }
+                      ) {
+                        errors.email = 'Tu email no es correcto';
+                      }
+                      if (!values.name) {
+                        errors.name = 'Información necesaria';
+                      }
+                      if (!values.phone) {
+                        errors.phone = 'Información necesaria';
+                      }
+                      
                     return errors;
                 }}
                 onSubmit={(values) => {
