@@ -9,18 +9,19 @@ import Error from "../../styles/fontsStyles/error"
 import Button from "../Button/Button"
 
 const FormContact = props => {
-    const { t, error, loading } = props;
-    const [state, setState] = useState({ send: false, error: false })
+    const { t } = props;
+    const [state, setState] = useState({ send: false, error: false, loading: false })
 
 
     const handleResponse = (status) => {
         if (status === 200) {
-            setState({ ...state, send: true })
+            setState({ ...state, send: true, loading: false });
         } else {
-            setState({ ...state, error: true })
+            setState({ ...state, error: true, loading: false });
         }
     }
 
+    const { send, error, loading } = state;
     return (
         <FormStyle>
             <Formik
@@ -44,6 +45,7 @@ const FormContact = props => {
                     return errors;
                 }}
                 onSubmit={(values) => {
+                    setState({ ...state, loading: true});
                     fetch("/contacto", {
                         method: "POST",
                         headers: {
@@ -68,7 +70,7 @@ const FormContact = props => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div data-aos="fade-in">
                                 <div className="error">
                                     <input
@@ -122,7 +124,7 @@ const FormContact = props => {
                                 />
                                 <Error>{errors.comentarios && touched.comentarios && errors.comentarios}</Error>
                             </div>
-                            {!state.send && !error && !loading && (
+                            {!send && !error && !loading && (
                                 <Button
                                     type="submit"
                                     className="send-button"
@@ -135,12 +137,11 @@ const FormContact = props => {
                                     type="submit"
                                     className="send-button"
                                     disabled={true}
-                                >
-                                    Cargando...
-                                </Button>
+                                    content={"Cargando..."}
+                                />
                             )}
-                            {state.send && (
-                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}></Button>
+                            {send && (
+                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}>Solicitud enviada</Button>
                             )}
 
                             {error && (
