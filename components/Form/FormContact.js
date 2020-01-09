@@ -70,13 +70,8 @@ const FormContact = props => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-<<<<<<< HEAD
-                        <form>
-                            <div>
-=======
                         <form onSubmit={handleSubmit}>
                             <div data-aos="fade-in">
->>>>>>> 341f49a961ca545720e7d510894f5161a648e262
                                 <div className="error">
                                     <input
                                         placeholder={t("contactName")}

@@ -20,6 +20,10 @@ const ButtonStyle = styled.button`
     align-items:center;
     outline:0px;
     cursor:pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+
+
     p{
         margin-bottom:0;
         text-transform: capitalize;
