@@ -8,7 +8,8 @@ const Button = props => {
         <ButtonStyle
             backgroundColor={props.backgroundColor}
             className="readmore"
-            onClick={props.method ? (event) => { event.preventDefault(); props.method } : ''}
+            disabled={props.disabled ? props.disabled : false}
+            onClick={props.method ? (event) => { event.preventDefault(); props.method() } : ''}
             type={props.type}
         >
             <Paragraph color={props.color} size={props.size}> {props.content}</Paragraph>

@@ -9,18 +9,18 @@ import { Formik } from 'formik';
 import Button from "../Button/Button"
 
 const FormValidate = props => {
-    const { t, send, error, loading } = props;
-    const [state, setState] = useState({ send: false, error: false })
+    const { t } = props;
+    const [state, setState] = useState({ send: false, error: false, loading: false})
 
-    const handleResponse = (status) => {
+    const handleResponse = (status ) => {
         if (status === 200) {
-            setState({ ...state, send: true })
+            setState({ ...state, send: true, loading: false })
         } else {
-            setState({ ...state, error: true })
+            setState({ ...state, error: true, loading: false })
         }
     }
 
-
+    const { send, error, loading } = state;
     return (
         <FormStyle>
             <Formik
@@ -56,7 +56,7 @@ const FormValidate = props => {
                     return errors;
                 }}
                 onSubmit={(values) => {
-                   
+                    setState({ ...state, loading: true})
                     fetch("/validate", {
                         method: "POST",
                         headers: {
@@ -78,8 +78,7 @@ const FormValidate = props => {
                     handleChange,
                     handleBlur,
                     handleSubmit,
-                    isSubmitting,
-                    /* and other goodies */
+                    isSubmitting
                 }) => (
                         <form onSubmit={handleSubmit}>
                             <div>
@@ -205,7 +204,7 @@ const FormValidate = props => {
                                     <Error>{errors.level && touched.level && errors.level}</Error>
                                 </div>
                             </div>
-                            {!state.send && !error && !loading && (
+                            {!send && !error && !loading && (
                                 <Button
                                     type="submit"
                                     className="send-button"
@@ -218,16 +217,15 @@ const FormValidate = props => {
                                     type="submit"
                                     className="send-button"
                                     disabled={true}
-                                >
-                                    Cargando...
-                    </Button>
+                                    content={"Cargando..."}
+                                />
                             )}
-                            {state.send && (
+                            {send && (
                                 <Button className="success-button" content={"Solicitud enviada"} disabled={true}>Solicitud enviada</Button>
                             )}
 
                             {error && (
-                                <Button className="error-button" content={"Se ha producido un error"}disabled={true}></Button>
+                                <Button className="error-button" content={"Se ha producido un error"} disabled={true}></Button>
                             )}
 
                         </form>
