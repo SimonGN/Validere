@@ -17,17 +17,17 @@ const ContactPage = props => {
         <ContactStyle>
             <div className="global">
                 <div className="column1">
-                    <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("title1")}</ParagraphTitle>
-                    <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("description")}</Paragraph>
+                    <ParagraphTitle>{t("title1")}</ParagraphTitle>
+                    <Paragraph >{t("description")}</Paragraph>
                     <div>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("email")}</Paragraph>
-                        <Paragraph data-aos="fade-in" data-aos-duration="1000" >{t("tel")}</Paragraph>
+                        <Paragraph >{t("email")}</Paragraph>
+                        <Paragraph >{t("tel")}</Paragraph>
                     </div>
                 </div>
 
                 <div className="contact">
-                    <ParagraphTitle data-aos="fade-in" data-aos-duration="1000">{t("title2")}</ParagraphTitle>
-                    <Titleh3 data-aos="fade-in" data-aos-duration="1000" >{t("subtitle")}</Titleh3>
+                    <ParagraphTitle>{t("title2")}</ParagraphTitle>
+                    <Titleh3 >{t("subtitle")}</Titleh3>
                     <FormContact />
 
                 </div>

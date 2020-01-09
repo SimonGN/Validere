@@ -33,6 +33,8 @@ p{
         width:95%;
         padding-bottom:3%;
         padding-left:3%;
+        -moz-appearance: none; 
+	-webkit-appearance: none; 
     }
     select{
         padding-left:2%;

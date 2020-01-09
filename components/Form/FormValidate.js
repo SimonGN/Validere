@@ -82,7 +82,7 @@ const FormValidate = props => {
                     /* and other goodies */
                 }) => (
                         <form onSubmit={handleSubmit}>
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <input
                                         placeholder={t("nameSurname")}
@@ -97,7 +97,7 @@ const FormValidate = props => {
                                 </div>
                             </div>
 
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <input
                                         placeholder={t("email")}
@@ -124,7 +124,7 @@ const FormValidate = props => {
                                 </div>
 
                             </div>
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <input
                                         placeholder={t("country")}
@@ -150,7 +150,7 @@ const FormValidate = props => {
                                     <Error>{errors.university && touched.university && errors.university}</Error>
                                 </div>
                             </div>
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <select
                                         onChange={handleChange}
@@ -177,7 +177,7 @@ const FormValidate = props => {
                                 </div>
                             </div>
 
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <select
                                         onChange={handleChange}

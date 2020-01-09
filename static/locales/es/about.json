@@ -4,7 +4,6 @@
     "descriptionAbout2": "Somos un grupo interdisciplinar de profesionales amplia experiencia previa que cubrimos los campos de la Educación, Asesoramiento Legal y de la Consultoría y la gestión.",
     "descriptionAbout3": "Por nuestras trayectorias previas conocemos profundamente la Administración española, así como el sistema educativo y su gestión interna. Por otra parte, por una intensa actividad en proyectos internacionales, estamos al tanto de los sistemas de otros países, especialmente de la Unión Europea, incluyendo oportunidades de formación y empleo, así como formalidades administrativas en estos estado.",
 
-
     "titleMision": "Nuestra Misión",
     "descriptionMision1": "Sabemos que las cualificaciones de cada uno de nosotros son parte de nosotros mismos.",
     "descriptionMision2": "Queremos proporcionarte un único punto de contacto para obtener el reconocimiento académico y profesional de ellas e ir más allá de una tramitación administrativa, buscando la orientación global sobre las posibilidades académicas y profesionales que tengas.",
@@ -23,13 +22,11 @@
     "descriptionProcess9":"Certificado",
     "descriptionProcess10":"Obtenemos el certificado de tu título ",
 
-
     "titleContact": "Contacto",
     "descriptionContact1": "Ponte en contacto con nosotros si tienes cualquier duda o quieres más información.",
 
-    "email":"email@validere.es",
-    "tel":"+34 500 500 500",
+    "email":"info@validere.es",
+    "tel":"+34 644 631 522",
     "button":"CONTACTA",
-    "mailto": "mailto:email@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email"
-
+    "mailto": "mailto:info@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email"
    }

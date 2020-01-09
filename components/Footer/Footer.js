@@ -35,7 +35,7 @@ const Footer = props => {
             </div>
             <div className="copy">
                 <Paragraph size="10px" spacing="0,5px" lineheight="13px">
-                    Copyright © by Validere, 2019. All rights reserved. All materials
+                    Copyright © by Validere, 2020. All rights reserved. All materials
                     on this website are intellectual property of Validere.
                 </Paragraph>
             </div>

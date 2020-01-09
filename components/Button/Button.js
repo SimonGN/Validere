@@ -10,7 +10,6 @@ const Button = props => {
             className="readmore"
             onClick={props.method ? (event) => { event.preventDefault(); props.method } : ''}
             type={props.type}
-        // data-aos="fade-in"
         >
             <Paragraph color={props.color} size={props.size}> {props.content}</Paragraph>
         </ButtonStyle>

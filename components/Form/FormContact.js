@@ -69,7 +69,7 @@ const FormContact = props => {
                     /* and other goodies */
                 }) => (
                         <form>
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <input
                                         placeholder={t("contactName")}
@@ -84,7 +84,7 @@ const FormContact = props => {
                                 </div>
                             </div>
 
-                            <div data-aos="fade-in">
+                            <div>
                                 <div className="error">
                                     <input
                                         placeholder={t("contactEmail")}
@@ -112,7 +112,7 @@ const FormContact = props => {
                             </div>
                             <div className="error">
                                 <textarea
-                                    data-aos="fade-in"
+                                
                                     placeholder={t("contactWrite")}
                                     name="comentarios"
                                     onChange={handleChange}
