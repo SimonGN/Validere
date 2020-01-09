@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormStyle } from "./FormStyle";
 
 import { withTranslation } from '../../i18n'
@@ -9,13 +9,15 @@ import Error from "../../styles/fontsStyles/error"
 import Button from "../Button/Button"
 
 const FormContact = props => {
-    const { t } = props;
+    const { t, error, loading } = props;
+    const [state, setState] = useState({ send: false, error: false })
+
 
     const handleResponse = (status) => {
         if (status === 200) {
-            this.setState({ send: true })
+            setState({ ...state, send: true })
         } else {
-            //show errors
+            setState({ ...state, error: true })
         }
     }
 
@@ -70,7 +72,7 @@ const FormContact = props => {
                             <div data-aos="fade-in">
                                 <div className="error">
                                     <input
-                                        placeholder={t("nameSurname")}
+                                        placeholder={t("contactName")}
                                         type="text"
                                         name="name"
                                         onChange={handleChange}
@@ -85,7 +87,7 @@ const FormContact = props => {
                             <div data-aos="fade-in">
                                 <div className="error">
                                     <input
-                                        placeholder={t("email")}
+                                        placeholder={t("contactEmail")}
                                         type="text"
                                         name="email"
                                         onChange={handleChange}
@@ -97,7 +99,7 @@ const FormContact = props => {
                                 </div>
                                 <div className="error">
                                     <input
-                                        placeholder={t("phone")}
+                                        placeholder={t("contactPhone")}
                                         type="text"
                                         name="phone"
                                         onChange={handleChange}
@@ -118,10 +120,32 @@ const FormContact = props => {
                                     value={values.comentarios}
                                     required
                                 />
+                                <Error>{errors.comentarios && touched.comentarios && errors.comentarios}</Error>
                             </div>
+                            {!state.send && !error && !loading && (
+                                <Button
+                                    type="submit"
+                                    className="send-button"
+                                    content={t("button")}
+                                >
+                                </Button>
+                            )}
+                            {loading && (
+                                <Button
+                                    type="submit"
+                                    className="send-button"
+                                    disabled={true}
+                                >
+                                    Cargando...
+                                </Button>
+                            )}
+                            {state.send && (
+                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}></Button>
+                            )}
 
-                            <Button content={t("button")} type="submit" method={handleSubmit} />
-
+                            {error && (
+                                <Button className="error-button" content={"Se ha producido un error"} disabled={true}></Button>
+                            )}
                         </form>
                     )}
             </Formik>

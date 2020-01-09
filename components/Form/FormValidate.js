@@ -211,7 +211,6 @@ const FormValidate = props => {
                                     className="send-button"
                                     content={t("button")}
                                 >
-
                                 </Button>
                             )}
                             {loading && (
@@ -224,13 +223,11 @@ const FormValidate = props => {
                     </Button>
                             )}
                             {state.send && (
-                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}>             
-                    </Button>
+                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}>Solicitud enviada</Button>
                             )}
 
                             {error && (
-                                <Button className="error-button" content={"Se ha producido un error"}disabled={true}>
-                    </Button>
+                                <Button className="error-button" content={"Se ha producido un error"}disabled={true}></Button>
                             )}
 
                         </form>
