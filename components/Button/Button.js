@@ -9,7 +9,7 @@ const Button = props => {
             backgroundColor={props.backgroundColor}
             className="readmore"
             disabled={props.disabled ? props.disabled : false}
-            onClick={props.method ? (event) => { event.preventDefault(); props.method } : ''}
+            onClick={props.method ? (event) => { event.preventDefault(); props.method() } : ''}
             type={props.type}
         // data-aos="fade-in"
         >
