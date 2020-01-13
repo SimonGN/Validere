@@ -42,7 +42,7 @@ const Nav = props => {
                 )}
                 {!handleScroll && (
                     <Link as="/" href={{ pathname: "/", query: { scroll: true } }}>
-                        <Paragraph size="13px" capital={url.includes('about') ? 'uppercase' : ''}>{t("nav1")}</Paragraph>
+                        <Paragraph size="13px" capital={url.includes('home') ? 'uppercase' : ''}>{t("nav1")}</Paragraph>
                     </Link>
                 )}
                     <Link href="/about"><Paragraph size="13px" capital={url.includes('about') ? 'uppercase' : ''}>{t("nav2")}</Paragraph></Link>

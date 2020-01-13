@@ -183,7 +183,7 @@ const FormValidate = props => {
                                         onBlur={handleBlur}
                                         value={values.degreeTime}
                                         name="degreeTime"
-                                        required
+                                        
                                     >
                                         <option value={t("selectTime0")}>{t("selectTime0")}</option>
                                         <option value={t("selectTime1")}>{t("selectTime1")}</option>
@@ -199,7 +199,7 @@ const FormValidate = props => {
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.level}
-                                        required
+                                        
                                     />
                                     <Error>{errors.level && touched.level && errors.level}</Error>
                                 </div>
