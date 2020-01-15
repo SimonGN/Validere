@@ -26,10 +26,10 @@ const Todo = props => {
                 <div className="noUni" data-aos="fade-in" data-aos-duration="1000">
                     <Titleh3>{t("subTitulo3")}</Titleh3>
                     <ul>
-                        <li><Paragraph>{t("description5")}</Paragraph></li>
-                        <li><Paragraph>{t("description5")}</Paragraph></li>
+                        <li><Paragraph>{t("description8")}</Paragraph></li>
+                        <li><Paragraph>{t("description9")}</Paragraph></li>
                     </ul>
-                    <Paragraph>{t("description5")}</Paragraph>
+                    <Paragraph>{t("description10")}</Paragraph>
                 </div>
             </div>
             <div className="colum2">

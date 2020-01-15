@@ -33,12 +33,11 @@ const ContactStyle = styled.div`
             }
     }
     @media only screen and (min-width:769px) {
-        h2{
-            text-align:center;
-        }
+
 
         .global{
             padding-top: 13%;
+            width:80%;
         }
         .column1{
             width: 42%;

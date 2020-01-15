@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 const FormStyle = styled.div`
+
 .error{
     width:100%;
     display:flex;
@@ -33,14 +34,12 @@ p{
         width:95%;
         padding-bottom:3%;
         padding-left:3%;
-        -moz-appearance: none; 
-	-webkit-appearance: none; 
+        -moz-appearance: menulist-button; 
+	-webkit-appearance: menulist-button; 
     }
-    select{
+    select, label{
         padding-left:2%;
         width:100%;
-    }
-    select{
         outline:none;
         border:none;
         background:white;
@@ -49,6 +48,11 @@ p{
         font-size: 16px;
         letter-spacing: 0.3px;
     }
+    label{
+        white-space:nowrap;
+        border-bottom: 0px solid black;
+    }
+
     textarea{
         width:95%;
         height:11px;
@@ -59,6 +63,25 @@ p{
     .readmore{
         margin-bottom:30%;
     }
+    .checkboxGlobal{
+        display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom:8%;
+    }
+    .checkbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:1%;
+    .inputchek{
+        width:30px;
+        height:30px;
+        padding:0;
+        margin: 0;
+    }
+    }
+
 
     
     @media only screen and (min-width:415px) and (max-width:768px){

@@ -17,7 +17,7 @@ const ContactPage = props => {
         <ContactStyle>
             <div className="global">
                 <div className="column1">
-                    <ParagraphTitle>{t("title1")}</ParagraphTitle>
+                    <ParagraphTitle >{t("title1")}</ParagraphTitle>
                     <Paragraph >{t("description")}</Paragraph>
                     <div>
                         <Paragraph >{t("email")}</Paragraph>
@@ -25,12 +25,11 @@ const ContactPage = props => {
                     </div>
                 </div>
 
-                <div className="contact">
-                    <ParagraphTitle>{t("title2")}</ParagraphTitle>
+                {/* <div className="contact">
+                    <ParagraphTitle align="center">{t("title2")}</ParagraphTitle>
                     <Titleh3 >{t("subtitle")}</Titleh3>
                     <FormContact />
-
-                </div>
+                </div> */}
             </div>
 
         </ContactStyle>

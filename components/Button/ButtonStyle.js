@@ -5,6 +5,7 @@ const ButtonStyle = styled.button`
     margin:0 auto;
     width:70%;
     padding:14px 25px;
+    opacity: ${props => (props.opacity ==='' ? '' : '100%')};
     /* display: inline-block;     */
     background: rgba(255,194,158,1);
     background: -moz-linear-gradient(left, rgba(255,194,158,1) 0%, rgba(156,232,199,1) 51%, rgba(186,181,232,1) 100%);

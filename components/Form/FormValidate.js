@@ -10,9 +10,9 @@ import Button from "../Button/Button"
 
 const FormValidate = props => {
     const { t } = props;
-    const [state, setState] = useState({ send: false, error: false, loading: false})
+    const [state, setState] = useState({ send: false, error: false, loading: false })
 
-    const handleResponse = (status ) => {
+    const handleResponse = (status) => {
         if (status === 200) {
             setState({ ...state, send: true, loading: false })
         } else {
@@ -24,7 +24,7 @@ const FormValidate = props => {
     return (
         <FormStyle>
             <Formik
-                initialValues={{ email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}` }}
+                initialValues={{ check: false, email: '', name: '', phone: '', country: '', university: '', nameUniversity: '', level: '', degreeType: `${t("selectUniversity1")}`, degreeTime: `${t("selectTime0")}` }}
 
                 validate={values => {
                     const errors = {};
@@ -53,10 +53,13 @@ const FormValidate = props => {
                     if (!values.level) {
                         errors.level = 'Información necesaria';
                     }
+                    if (!values.check) {
+                        errors.check = 'Necesitamos tu consentimiento';
+                    }
                     return errors;
                 }}
                 onSubmit={(values) => {
-                    setState({ ...state, loading: true})
+                    setState({ ...state, loading: true })
                     fetch("/validate", {
                         method: "POST",
                         headers: {
@@ -183,7 +186,6 @@ const FormValidate = props => {
                                         onBlur={handleBlur}
                                         value={values.degreeTime}
                                         name="degreeTime"
-                                        
                                     >
                                         <option value={t("selectTime0")}>{t("selectTime0")}</option>
                                         <option value={t("selectTime1")}>{t("selectTime1")}</option>
@@ -199,16 +201,31 @@ const FormValidate = props => {
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.level}
-                                        
+
                                     />
                                     <Error>{errors.level && touched.level && errors.level}</Error>
                                 </div>
+                            </div>
+                            <div className="checkboxGlobal">
+                                <div className="checkbox">
+                                    <input type="checkbox"
+                                    className="inputchek"
+                                        name="check"
+                                        value={values.check}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        required></input>
+                                    <label>{t("checkbox")}</label>
+                                </div>
+                                <Error>{errors.check && touched.check && errors.check}</Error>
+
                             </div>
                             {!send && !error && !loading && (
                                 <Button
                                     type="submit"
                                     className="send-button"
                                     content={t("button")}
+                                    disabled={!values.check}
                                 >
                                 </Button>
                             )}
@@ -217,15 +234,15 @@ const FormValidate = props => {
                                     type="submit"
                                     className="send-button"
                                     disabled={true}
-                                    content={"Cargando..."}
+                                    content={t("buttonOption1")}
                                 />
                             )}
                             {send && (
-                                <Button className="success-button" content={"Solicitud enviada"} disabled={true}>Solicitud enviada</Button>
+                                <Button className="success-button" content={t("buttonOK")} disabled={true}></Button>
                             )}
 
                             {error && (
-                                <Button className="error-button" content={"Se ha producido un error"} disabled={true}></Button>
+                                <Button className="error-button" content={t("buttonError")} disabled={true}></Button>
                             )}
 
                         </form>

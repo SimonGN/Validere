@@ -17,12 +17,12 @@ const ValidatePage = props => {
         <ValidateStyle>
             <div className="global">
                 <div className="column1">
-                    <ParagraphTitle data-aos="fade-in">{t("titleValidate")}</ParagraphTitle>
+                    <ParagraphTitle align="left" data-aos="fade-in">{t("titleValidate")}</ParagraphTitle>
                     <Paragraph data-aos="fade-in">{t("subtitleValidate")}</Paragraph>
                 </div>
 
                 <div className="contact">
-                    <ParagraphTitle data-aos="fade-in">{t("titleValidate2")}</ParagraphTitle>
+                    <ParagraphTitle align="center"data-aos="fade-in">{t("titleValidate2")}</ParagraphTitle>
                     <Titleh3 data-aos="fade-in">{t("subtitleValidate2")}</Titleh3>
                     <FormValidate />
 

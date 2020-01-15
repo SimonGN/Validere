@@ -23,6 +23,11 @@
 
     "alert1":"Campo obligatorio",
 
-    "button":"Enviar"
+    "checkbox":"Estos datos solo seran utilizados para mi validación",
+
+    "button":"Enviar",
+    "buttonOption1":"Cargando...",
+    "buttonOK":"Solicitud enviada",
+    "buttonError":"Se ha producido un error"
 
 }

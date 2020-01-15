@@ -28,14 +28,12 @@ const ValidateStyle = styled.div`
         .column1{
             width: 50%;
         }
-        h2{
-                text-align:center;
-            }
     }
     @media only screen and (min-width:769px) {
-        h2{
-            text-align:center;
+        .global{
+            width:80%;
         }
+
 
         .global{
             padding-top: 13%;
