@@ -1,35 +1,35 @@
 {
 
-    "title1": "Validar,",
-    "title2": "ahora es más fácil",
-    "description1": "Queremos proporcionarte un único punto de contacto para obtener el reconocimiento académico y profesional hacia España y desde España.",
-    "description2": "Adaptarnos a tus necesidades, desde la mera presentación de un documento hasta la gestión completa de tus derechos académicos y profesionales a partir de tus cualificaciones",
-    "enlace1": "Ir a Validar",
-    "mailto": "mailto:email@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email",
+    "title1": "Validate your academic qualifications",
+    "title2": "is easier now!",
+    "description1": "We would like to provide you with a single point of contact to obtain academic and professional recognition towards Spain and from Spain.",
+    "description2": "We will aapt to your needs, from the mere presentation of a document tothe complete management of your academic and professional rights based on your qualifications.",
+    "enlace1": "Go to Validar",
+    "mailto": "",
 
-    "subTitulo1": "Qué hacemos",
-    "description3": "Orientación y obtención de reconocimientos académicos y profesionales internacionales de nuestros clientes",
+    "subTitulo1": "What we do?",
+    "description3": "Orientation and obtaining international academic and professional recognition of our clients.",
     
-    "subTitulo2": "Títulos Universitarios y Máster",
-    "description4": "¿Deseas homologar tu título para el ejercicio de una Profesión regulada*? O quieres poder desarrollar otras profesiones a través de la equivalencia de tu título universitario? Indícanos si eres Ciudadano de la Unión Europea y si tu título procede de una Universidad UE o bien procede de otros países, ya que el procedimiento será diferente.",
-    "description5": "¿Has estudiado alguna carrera sanitaria fuera de la UE y buscas su reconocimiento en España para el ejercicio de tu profesión?",
-    "description6": "¿Has presentado ya tu expediente en la Administración y no has obtenido resultados todavía?",
-    "description7": "Cualquiera que sea tu caso, te asesoramos en la viabilidad de la validación y gestionamos la tramitación con la Administración. En el caso de que ya hayas presentado la tramitación y no hayas obtenido respuesta, revisamos el estado de tu validación, y te ayudamos a resolver el problema.",
+    "subTitulo2": "University Degrees",
+    "description4": "Do you want to approve your degree for the exercise of a regulated profession *? Or do you want to be able to develop other professions through the equivalence of your university degree? Tell us if you are a Citizen of the European Union and if your degree comes from an EU University or comes from other countries, as the procedure will be different.",
+    "description5": "Have you studied a health career outside the EU and are looking for recognition in Spain for the exercise of your profession?",
+    "description6": "Have you already submitted your file to the Administration and have not obtained results yet are you still awaiting the outcome?",
+    "description7": "Whatever your case may be, we advise you on the feasibility of validation and we can manage the procedure with the Administration. In the event that you have already submitted the procedure and have not received an answer, we review the status of your validation, and help you solve the problem.",
 
-    "subTitulo3": "Títulos No Universitarios",
-    "description8": "¿Deseas homologar tus estudios de ESO o Bachillerato, para continuar tus estudios en España?",
-    "description9": "¿Quieres ejercer tu profesión a través de la Homologación de tus estudios de Formación Profesional?",
-    "description10": "Cualquiera que sea tu caso, te asesoramos en la viabilidad de la validación y gestionamos la tramitación conla Administración.",
+    "subTitulo3": "Non University Degrees from abroad (outside Spain)",
+    "description8": "Do you want to homologate your studies of Secondary Education or HighSchool, to continue your studies in Spain?",
+    "description9": "Do you want to practice your profession through the Homologation of your VET studies?",
+    "description10": "Whatever your case may be, we will advise you on the feasibility of validation and manage the process with the administration.",
 
-    "subTitulo4": "Servicios de Aesoramiento Integral",
-    "description11": "Dirigido a Universidades, Colegios, Empresas, Fundaciones y Particulares en todos los ámbitos educativos relacionados con la homologación y validación de titulaciones y el desarrollo de profesiones en España y en el extranjero.",
+    "subTitulo4": "Comprehensive Advisory Services",
+    "description11": "Aimed at Universities, Colleges, Companies, Foundations and Individuals in all educational fields related to the approval and validation of degrees and the development of professions in Spain and abroad.",
 
     "titleNosotros": "Somos un grupo interdisciplinar con amplia experiencia que busca ir más allá de un simple trámite y poder orientarte lo mejor posible",
-    "enlace2": "Ir a Nosotros",
+    "enlace2": "Go to Nosotros",
 
-    "name1": "Patricia Wistires",
-    "nameDescription1": "Amaped, una transformación digital suave como el dibujo de un niño.",
-    "name2": "Davis Suther",
-    "nameDescription2": "Amaped, una transformación digital suave como el dibujo de un niño."
+    "name1": "Gonzalo",
+    "nameDescription1": "I studied my Senior High School Year in the USA. When I considered going back to Spain I was a little lost. The VALIDERE team was in charge of the procedures to do the EBAU and, in addition, to advising me on which University was more convenient for me to start my Psychology studies. Thanks to them I am enjoying my University studies immensely.",
+    "name2": "Paula",
+    "nameDescription2": "I studied Industrial Engineering in France. In VALIDERE they dealt with both the recognition (homologation) of my academic degree and the valid professional recognition between EU countries. Thanks to this system I was able to quickly join the company that had made me a very interesting job offer."
 
    }

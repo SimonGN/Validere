@@ -1,26 +1,26 @@
 {
     "titleAbout": "Quiénes somos",
-    "descriptionAbout1": "Nacemos para orientar a nuestros clientes en todos los ámbitos relacionados con las titulaciones académicas y la movilidad internacional a partir de éstas: Hacia España y desde España.",
-    "descriptionAbout2": "Somos un grupo interdisciplinar de profesionales amplia experiencia previa que cubrimos los campos de la Educación, Asesoramiento Legal y de la Consultoría y la gestión.",
-    "descriptionAbout3": "Por nuestras trayectorias previas conocemos profundamente la Administración española, así como el sistema educativo y su gestión interna. Por otra parte, por una intensa actividad en proyectos internacionales, estamos al tanto de los sistemas de otros países, especialmente de la Unión Europea, incluyendo oportunidades de formación y empleo, así como formalidades administrativas en estos estado.",
+    "descriptionAbout1": "Nacemos para orientar a nuestros clientes en todos los ámbitos relacionados con las titulaciones académicas y la movilidad internacionala partir de éstas: Hacia España y desde España.",
+    "descriptionAbout2": "Somos un grupo interdisciplinar de profesionales con amplia experiencia previa que cubrimos los campos de la Educación, el  Asesoramiento Legal,  la Consultoría y la Gestión.",
+    "descriptionAbout3": "Por nuestra trayectoria previa conocemos profundamente la Administración española, así como el sistema educativo y su gestión interna. Por otra parte, gracias a una intensa actividad en proyectos internacionales, estamos al tanto de los sistemas de otros países, especialmente de la Unión Europea, incluyendo oportunidades de formación y empleo, así como formalidades administrativas en estos estados.",
 
     "titleMision": "Nuestra Misión",
     "descriptionMision1": "Sabemos que las cualificaciones de cada uno de nosotros son parte de nosotros mismos.",
     "descriptionMision2": "Queremos proporcionarte un único punto de contacto para obtener el reconocimiento académico y profesional de ellas e ir más allá de una tramitación administrativa, buscando la orientación global sobre las posibilidades académicas y profesionales que tengas.",
     "descriptionMision3": "Te proporcionaremos información sólida y puntual sobre todas tus opciones y te garantizamos una comunicación clara en todo momento.",
-    "descriptionMision4": "Nos sentimos con alcance global y conocimiento local: te podemos ayudar en tu establecimiento en España así como en tus opciones de movilidad exterior con tu título o cualificación española",
+    "descriptionMision4": "Nos sentimos con alcance global y conocimiento local: te podemos ayudar en tu establecimiento en España así como en tus opciones de movilidad exterior con tu título o cualificación española.",
 
     "titleProcess":"Proceso",
     "descriptionProcess1":"Contacto",
     "descriptionProcess2":"Contacta con Validere a través de su página web",
     "descriptionProcess3":"Reunión",
-    "descriptionProcess4":"Obtén una primer reunión con nosotros para poder conocerte y contarnos tu situación",
+    "descriptionProcess4":"Obtén una primer reunión en persona o virtual con nosotros para poder conocerte y contarnos tu situación",
     "descriptionProcess5":"Personalización",
     "descriptionProcess6":"Una vez conocida tu situación te asesoramos y te guiamos según tus necesidades",
     "descriptionProcess7":"Documentación",
-    "descriptionProcess8":"Preparamos y presentamos todos los documentos necesarios para tu validación",
-    "descriptionProcess9":"Certificado",
-    "descriptionProcess10":"Obtenemos el certificado de tu título ",
+    "descriptionProcess8":"Una vez estudiamos tu documentaciónte asesoramos yte guiamos según tus necesidades",
+    "descriptionProcess9":"",
+    "descriptionProcess10":"",
 
     "titleContact": "Contacto",
     "descriptionContact1": "Ponte en contacto con nosotros si tienes cualquier duda o quieres más información.",
@@ -28,5 +28,5 @@
     "email":"info@validere.es",
     "tel":"+34 644 631 522",
     "button":"CONTACTA",
-    "mailto": "mailto:info@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email"
+    "mailto": "mailto:info@validere.es"
    }

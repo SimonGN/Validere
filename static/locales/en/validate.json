@@ -1,23 +1,33 @@
 {
-    "titleValidate": "Validar",
-    "subtitleValidate": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget.",
+    "titleValidate": "Validate",
+    "subtitleValidate": "Welcome!!, if you leave us your data, we will treat your case as quickly as possible and we will contact you very soon. That way everything will be easier for everyone.",
+    
     "titleValidate2": "Comienza la validación",
     "subtitleValidate2": "Rellena tus datos",
+    
     "nameSurname":"Nombre y Apellidos",
     "email":"Email",
-    "phone":"Teléfono",
-    "country":"País",
-    "university":"Nombre Universidad/Centro",
-    "selectUniversity0": "Título Universitario",
-    "selectUniversity1": "Título Universitario",
-    "selectUniversity2": "Título No Universitario",
-    "nameUniversity":"Nombre de la Titulación",
-    "degreeTime":"Duración de la titulación",
-    "selectTime0":"Duración de 2 años",
-    "selectTime1":"Duración de 3 años",
-    "selectTime2":"Duración de 4 años",
-    "selectTime3":"Duración de +4 años",
-    "level":"Nivel Académico",
-    "alert1":"Campo obligatorio",
-    "button":"Enviar"
+    "phone":"Phone",
+    "country":"Country",
+    "university":"Name University/Center",
+    "selectUniversity0": "University Degree",
+    "selectUniversity1": "University Degree",
+    "selectUniversity2": "Non-University Degree",
+    "nameUniversity":"Name of the Degree",
+    "degreeTime":"Duration of the degree",
+    "selectTime0":"Duration of 2 years",
+    "selectTime1":"Duration of 3 years",
+    "selectTime2":"Duration of 4 years",
+    "selectTime3":"Duration of +4 years",
+    "level":"Academic Level",
+
+    "alert1":"Required field",
+
+    "checkbox":"This data will only be used for my validation",
+
+    "button":"Send",
+    "buttonOption1":"Loading...",
+    "buttonOK":"Request sent",
+    "buttonError":"An error has occurred"
+    
 }

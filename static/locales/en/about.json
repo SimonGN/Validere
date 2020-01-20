@@ -1,35 +1,34 @@
 {
-    "titleAbout": "Quienes somos",
-    "descriptionAbout1": "Nacemos para orientar a nuestros clientes en todos los ámbitos relacionados con las titulaciones académicas y la movilidad internacional a partir de éstas: Hacia España y desde España.",
-    "descriptionAbout2": "Somos un grupo interdisciplinar de profesionales amplia experiencia previa que cubrimos los campos de la Educación, Asesoramiento Legal y de la Consultoría y la gestión.",
-    "descriptionAbout3": "Por nuestras trayectorias previas conocemos profundamente la Administración española, así como el sistema educativo y su gestión interna. Por otra parte, por una intensa actividad en proyectos internacionales, estamos al tanto de los sistemas de otros países, especialmente de la Unión Europea, incluyendo oportunidades de formación y empleo, así como formalidades administrativas en estos estado.",
+    "titleAbout": "Who we are",
+    "descriptionAbout1": "We are born to guide our clients in all areas related to academic degreesand international mobility from these: Towards Spain and from Spain.",
+    "descriptionAbout2": "We are an interdisciplinary group of professionals with extensive previous experience that cover the fields of Education, Legal Advice, Consulting and Management.",
+    "descriptionAbout3": "Due to our previous experience, we know the Spanish Administration in great debth, as well as the education system and its internal management. On the other hand, thanks to an intense activity in international projects, we are aware of the systems of other countries, especially of the European Union, including training and employment opportunities, as well as administrative formalities in these states.",
 
 
-    "titleMision": "Nuestra Misión",
-    "descriptionMision1": "Sabemos que las cualificaciones de cada uno de nosotros son parte de nosotros mismos.",
-    "descriptionMision2": "Queremos proporcionarte un único punto de contacto para obtener el reconocimiento académico y profesional de ellas e ir más allá de una tramitación administrativa, buscando la orientación global sobre las posibilidades académicas y profesionales que tengas.",
-    "descriptionMision3": "Te proporcionaremos información sólida y puntual sobre todas tus opciones y te garantizamos una comunicación clara en todo momento.",
-    "descriptionMision4": "Nos sentimos con alcance global y conocimiento local: te podemos ayudar en tu establecimiento en España así como en tus opciones de movilidad exterior con tu título o cualificación española",
+    "titleMision": "Our Mission",
+    "descriptionMision1": "We know that the qualifications of each of us are part of ourselves",
+    "descriptionMision2": "We want to provide you with a single point of contact to obtain your academic and professional recognition and go beyond an administrative process, seeking global guidance on the academic and professional possibilities you have.",
+    "descriptionMision3": "We will provide you with solid and timely information about all your options and guarantee you clear communication at all times.",
+    "descriptionMision4": "We feel we have global reach and local knowledge: we can help you in your establishment in Spain as well as in your external mobility options with your Spanish degree or qualification.",
 
-    "titleProcess":"Proceso",
-    "descriptionProcess1":"Contacto",
-    "descriptionProcess2":"Contacta con Validere a través de su página web",
-    "descriptionProcess3":"Reunión",
-    "descriptionProcess4":"Obtén una primer reunión con nosotros para poder conocerte y contarnos tu situación",
-    "descriptionProcess5":"Personalización",
-    "descriptionProcess6":"Una vez conocida tu situación te asesoramos y te guiamos según tus necesidades",
-    "descriptionProcess7":"Documentación",
-    "descriptionProcess8":"Preparamos y presentamos todos los documentos necesarios para tu validación",
-    "descriptionProcess9":"Certificado",
-    "descriptionProcess10":"Obtenemos el certificado de tu título ",
+    "titleProcess":"Process",
+    "descriptionProcess1":"Contact",
+    "descriptionProcess2":"Contact Validere through the website",
+    "descriptionProcess3":"Meeting",
+    "descriptionProcess4":"Set up a first meeting with us to meet and explain to us your situation",
+    "descriptionProcess5":"Personalization",
+    "descriptionProcess6":"Once your situation is known we will advise and guide you according to your needs and possibilities",
+    "descriptionProcess7":"Documentation",
+    "descriptionProcess8":"Once we study all your documentation, we will advise you and guide you according to your profile",
+    "descriptionProcess9":"",
+    "descriptionProcess10":"",
 
 
-    "titleContact": "Contacto",
-    "descriptionContact1": "Ponte en contacto con nosotros si tienes cualquier duda o quieres más información.",
+    "titleContact": "Contact",
+    "descriptionContact1": "Contact us if you have any questions or want more information.",
 
-    "email":"email@validere.es",
-    "tel":"+34 500 500 500",
-    "button":"CONTACTA",
-    "mailto": "mailto:email@validere.es?body=Completa esta información%0D%0D%0DNombre y Apellido%0D%0DTeléfono%0D%0DPaís%0D%0DNombre de universidad o centro%0D%0DDuración%0D%0DNombre de la titulación%0D%0D%0D%0D Añade más información a este Email"
-
+    "email":"info@validere.es",
+    "tel":"+34 644 631 522",
+    "button":"CONTACT",
+    "mailto": "mailto:info@validere.es"
    }
