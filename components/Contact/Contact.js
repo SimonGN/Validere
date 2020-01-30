@@ -11,7 +11,8 @@ import FormContact from "../Form/FormContact"
 
 const ContactPage = props => {
     const { t } = props;
-
+    const email = t("email");
+    const phone = t("tel");
     return (
 
         <ContactStyle>
@@ -20,8 +21,8 @@ const ContactPage = props => {
                     <ParagraphTitle >{t("title1")}</ParagraphTitle>
                     <Paragraph >{t("description")}</Paragraph>
                     <div>
-                        <Paragraph >{t("email")}</Paragraph>
-                        <Paragraph >{t("tel")}</Paragraph>
+                    <a href={`mailto:${email}`}><Paragraph>{t("email")}</Paragraph></a> 
+                    <a href={`tel:${phone}`}><Paragraph>{t("tel")}</Paragraph></a>
                     </div>
                 </div>
 

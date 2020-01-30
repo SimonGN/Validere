@@ -20,6 +20,13 @@ const ContactStyle = styled.div`
     p{
         margin-bottom: 3%;
     }
+    
+    a {
+        text-decoration: none;
+        &:visited {
+            text-decoration: none;
+        }
+    }
        
     @media only screen and (min-width:415px) and (max-width:768px){
         .global{

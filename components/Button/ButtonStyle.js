@@ -24,7 +24,9 @@ const ButtonStyle = styled.button`
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 
-
+    &:disabled {
+        opacity: 0.5;
+    }
     p{
         margin-bottom:0;
         text-transform: capitalize;
