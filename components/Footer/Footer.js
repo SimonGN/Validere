@@ -24,8 +24,8 @@ const Footer = props => {
                 <div className="option">
                     <a href={`mailto:${email}`}><Paragraph size="13px" >{t("email")}</Paragraph></a> 
                     <a href={`tel:${phone}`}><Paragraph size="13px" >{t("phone")}</Paragraph></a>
-                    <a href="/"><Paragraph size="13px" >{t("termsConditions")}</Paragraph></a>
-                    <a href="/"><Paragraph size="13px" >{t("privacyPolicy")}</Paragraph></a>
+                    <a href="/static/documents/AvisoLegalCondicionesGeneralesUso.pdf" target="_blank"><Paragraph size="13px" >{t("termsConditions")}</Paragraph></a>
+                    <a href="/static/documents/PoliticaPrivacidad.pdf" target="_blank"><Paragraph size="13px" >{t("privacyPolicy")}</Paragraph></a>
                 </div>
                 <div className="len">
                     <Paragraph size="13px" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</Paragraph>
