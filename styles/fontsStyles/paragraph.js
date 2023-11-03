@@ -10,6 +10,9 @@ const paragraph = styled.p`
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
     text-transform: ${props => (props.capital === 'uppercase' ? 'uppercase' : 'none')};
     
+    &.disabled:hover {
+        cursor: not-allowed;
+    }
 
     @media only screen and (min-width:415px) and (max-width:768px){
 
