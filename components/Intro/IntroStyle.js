@@ -32,7 +32,7 @@ const IntroStyle = styled.div`
         margin-top:15%;
         margin-bottom: 20%;
         p, img{
-            cursor: pointer;
+            cursor: not-allowed;
         }
     }
     .line{

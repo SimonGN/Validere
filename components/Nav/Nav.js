@@ -47,7 +47,7 @@ const Nav = props => {
                 )}
                     <Link href="/about"><Paragraph size="13px" capital={url.includes('about') ? 'uppercase' : ''}>{t("nav2")}</Paragraph></Link>
                     <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
-                    <Link href="/validate"><Paragraph size="13px" capital={url.includes('validate') ? 'uppercase' : ''}>{t("nav3")}</Paragraph></Link>
+                    <Paragraph className="disabled" size="13px" capital={url.includes('validate') ? 'uppercase' : ''}>{t("nav3")}</Paragraph>
                     <Link href="/contact"><Paragraph size="13px" capital={url.includes('contact') ? 'uppercase' : ''}>{t("nav4")}</Paragraph></Link>
                 </nav>
             </header>

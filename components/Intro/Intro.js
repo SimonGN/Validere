@@ -35,8 +35,8 @@ const Intro = props => {
                 </div>
 
                 <div className="button" data-aos="fade-in" data-aos-duration="1000">
-                    <Link href="/validate"><Paragraph >{t("enlace1")}</Paragraph></Link>
-                    <Link href="/validate"><img  className="line"src="/static/svg/line.svg" /></Link>
+                    <Paragraph className="disabled" >{t("enlace1")}</Paragraph>
+                    <img  className="line"src="/static/svg/line.svg" />
                 </div>
 
             </div>
